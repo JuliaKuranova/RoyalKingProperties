@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/RoyalKingProperties/static/css/main.d3ae4fe7.css",
-    "main.js": "/RoyalKingProperties/static/js/main.a0ba4475.js",
+    "main.js": "/RoyalKingProperties/static/js/main.35f57718.js",
     "static/media/header_image.png": "/RoyalKingProperties/static/media/header_image.b5bf89a7ab0757810fea.png",
     "static/media/KEMPINSKI-RESIDENCES-THE-CREEK.jpg": "/RoyalKingProperties/static/media/KEMPINSKI-RESIDENCES-THE-CREEK.9d79a76eb0ae70f91fb7.jpg",
     "static/media/BURJ-BINGHATTI-JACOB-&-CO-RESIDENCES.jpg": "/RoyalKingProperties/static/media/BURJ-BINGHATTI-JACOB-&-CO-RESIDENCES.ae9a06985400586f641d.jpg",
@@ -31,10 +31,10 @@
     "static/media/btn-slide-left.svg": "/RoyalKingProperties/static/media/btn-slide-left.1cf012fd7a40b5c46dce.svg",
     "static/media/arrow-right.svg": "/RoyalKingProperties/static/media/arrow-right.899a4858d27879c54a28.svg",
     "main.d3ae4fe7.css.map": "/RoyalKingProperties/static/css/main.d3ae4fe7.css.map",
-    "main.a0ba4475.js.map": "/RoyalKingProperties/static/js/main.a0ba4475.js.map"
+    "main.35f57718.js.map": "/RoyalKingProperties/static/js/main.35f57718.js.map"
   },
   "entrypoints": [
     "static/css/main.d3ae4fe7.css",
-    "static/js/main.a0ba4475.js"
+    "static/js/main.35f57718.js"
   ]
 }
