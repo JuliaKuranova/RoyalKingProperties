@@ -1,0 +1,12 @@
+.units {
+  width: 100%;
+  row-gap: 32px;
+}
+
+@media (min-width: 768px) {
+  .units {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 480px);
+    justify-content: space-evenly;
+  }
+}

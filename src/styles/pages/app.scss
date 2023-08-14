@@ -1,0 +1,62 @@
+@use '../abstracts/variables.scss' as var;
+
+body {
+  background: #000;
+  color: var.$white;
+}
+
+a {
+  color: var.$white;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline var.$white;
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+.App {
+  max-width: 1440px;
+  margin: auto;
+}
+
+.section {
+  padding-bottom: 64px;
+}
+
+.header__wrapper {
+  position: relative;
+}
+
+.apartments__banner .slick-slider {
+  position: relative;
+
+  .slick-dots {
+    position: absolute;
+    bottom: 8px;
+
+    button:before {
+      color: white;
+      opacity: 0.75;
+    }
+
+    .slick-active button:before{
+      opacity: 1;
+    }
+  }
+
+
+}
+
+
+
+@media (min-width: 768px) {
+  .section {
+    padding-bottom: 128px;
+  }
+}

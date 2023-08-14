@@ -1,0 +1,22 @@
+@use '../../abstracts/variables.scss' as var;
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  // align-items: center;
+  
+  width: 100%;
+  max-width: 628px;
+
+  // margin: 0;
+  row-gap: 8px;
+
+  padding-top: 8px;
+
+  p a {
+    color: var.$accent-yellow;
+  }
+  & > .main-text {
+    padding-bottom: 32px;
+  }
+}

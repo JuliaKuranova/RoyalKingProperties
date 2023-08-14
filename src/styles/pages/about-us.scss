@@ -1,0 +1,43 @@
+.about-us {
+  &__banner {
+    margin-bottom: 48px;
+  }
+  &__info {
+    margin: 0 16px;
+    display: grid;
+    row-gap: 48px;
+
+    div {
+      display: grid;
+      row-gap: 8px;
+
+      h2 {
+        margin-bottom: 16px;
+      }
+      p span {
+        color: #F5DEB2;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .about-us {
+    &__banner {
+      margin-bottom: 64px;
+    }
+    &__info {
+      margin: 0 82px;
+      row-gap: 32px;
+  
+      div {
+        row-gap: 16px;
+  
+        h2 {
+          margin-bottom: inherit;
+        }
+      }
+    }
+  }
+}
+

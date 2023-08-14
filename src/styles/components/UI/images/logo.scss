@@ -1,0 +1,22 @@
+// .logoText {
+//   display: none;
+// }
+.logo {
+  line-height: 0;
+}
+
+.logoDesk {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  // .logoText {
+  //   display: inherit;
+  // }
+  .logoDesk {
+    display: inherit;
+  }
+  .logoMob {
+    display: none;
+  }
+}

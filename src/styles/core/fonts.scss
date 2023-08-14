@@ -1,0 +1,29 @@
+//   NeutralFaceRegular
+@font-face {
+  font-family: 'Neutral Face';
+  font-style: normal;
+  // font-weight: 400;
+  src: local(''),
+    url('../../assets/fonts/NeutralFaceRegular.woff2') format('woff2'),
+    url('../../assets/fonts/NeutralFaceRegular.woff') format('woff');
+}
+
+// Jost-Regular
+@font-face {
+  font-display: swap;
+  font-family: 'Jost Regular';
+  font-style: normal;
+  src: local(''),
+    url('../../assets/fonts/Jost-Regular.woff2') format('woff2'),
+    url('../../assets/fonts/Jost-Regular.woff') format('woff');
+}
+
+// Jost-Medium
+@font-face {
+  font-display: swap;
+  font-family: 'Jost Medium';
+  font-style: normal;
+  src: local(''),
+    url('../../assets/fonts/Jost-Medium.woff2') format('woff2'),
+    url('../../assets/fonts/Jost-Medium.woff') format('woff');
+}

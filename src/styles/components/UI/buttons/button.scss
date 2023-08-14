@@ -1,0 +1,82 @@
+@use '../../../abstracts/variables.scss' as var;
+
+.b {
+  margin: 15px;
+}
+
+.more-btn {
+  // display: flex;
+  // column-gap: 24px;
+  border: 2px solid var.$white;
+  padding: 16px 29px;
+  font-family: Neutral Face, sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  background: none;
+  color: white;
+  width: -webkit-fill-available;
+  transition: 0.3s;
+
+  display: flex;
+  column-gap: 8px;
+  align-items: center;
+  justify-content: center;
+
+  & span {
+    padding-right: 24px;
+  }
+
+
+  svg {
+    transition: 0.3s;
+  }
+
+  &:hover {
+    background: white;
+    color: black;
+    .arrow-svg {
+      rotate: 45deg;
+      path {
+        stroke: black;
+      }
+    }
+
+  }
+}
+
+
+
+
+.button {
+  display: flex;
+  column-gap: 8px;
+  border: 2px solid var.$white;
+  padding: 8px 32px;
+  font-family: Neutral Face, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  background: black;
+  color: var.$white;
+}
+
+.btn-yellow {
+  background: #F5DEB2;
+  color: black;
+  border: 2px solid #F5DEB2;
+
+  font-size: 18px;
+}
+
+.btn-black {
+  background:  black;
+  color: white;
+  border: 2px solid  black;
+}
+
+
+
+@media (min-width: 768px) {
+  .more-btn {
+    width: auto;
+  }
+}

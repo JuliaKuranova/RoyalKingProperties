@@ -1,0 +1,115 @@
+// COLORS
+
+// Main
+$white: #fff;
+$header-background: #181818;
+$accent-yellow: #f5deb2;
+
+$tags-bedroom: #F2F7A1;
+$tags-baths: #46C2CB;
+$tags-square: #FFF;
+$tags-view: #BDBCFF;
+
+
+$grey: #c2c2c2;
+// $black: #000000;
+
+// Special
+$footer-bg: #242424;
+$dividers: #5D5D5D;
+// $error: #FF4A60;
+
+$gap8: 8px;
+
+// Text styles
+.hints {
+  font-family: Jost Regular;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 140%;
+}
+//  Typography 
+// Mobail
+.h1 {
+  font-family: Neutral Face, sans-serif;
+  font-size: 26px;
+
+  font-weight: 400;
+  //   line-height: 140%;
+
+  margin-bottom: 32px;
+}
+
+.h2 {
+  font-family: Jost Medium, sans-serif;
+  font-size: 23px;
+
+  //   about
+  font-weight: 500;
+  line-height: 140%;
+}
+.h3 {
+//   color: #c2c2c2;
+  font-family: Neutral Face, sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  //   line-height: 140%;
+}
+.main-text {
+  font-family: Jost Regular, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
+  color: #c2c2c2;
+
+}
+.tags {
+  font-family: Jost Regular, sans-serif;
+  font-size: 14px;
+  line-height: 140%;
+}
+.specifications {
+  font-family: Neutral Face, sans-serif;
+  font-size: 14px;
+}
+
+// BTN
+.btn {
+    // leading-trim: both;
+    // text-edge: cap;
+    font-family: Neutral Face, sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    align-self: flex-end;
+  }
+.btn__more {
+  // text-edge: cap;
+  font-family: Neutral Face, sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  border: 2px solid #fff;
+  display: flex;
+  column-gap: 24px;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 29px 16px 58px;
+}
+// Desktop
+@media (min-width: 768px) {
+  .h1 {
+    font-size: 44px;
+  }
+  .h2 {
+    font-size: 28px;
+  }
+  .h3 {
+    font-size: 24px;
+  }
+  .main-text {
+    font-size: 18px;
+  }
+
+  .btn__more {
+    max-width: 122px;
+  }
+}

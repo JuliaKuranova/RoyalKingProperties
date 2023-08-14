@@ -1,0 +1,61 @@
+@use '../../abstracts/variables.scss' as var;
+
+.footer__wrapper {
+  background: var.$footer-bg;
+  padding: 64px 61px;
+  text-align: center;
+  align-items: center;
+
+
+}
+.footerLogo {
+  display: none;
+}
+.footer-menu {
+  display: grid;
+  row-gap: 24px;
+  margin-bottom: 32px;
+}
+.social-link {
+  display: flex;
+  column-gap: 32px;
+  justify-content: center;
+}
+.footer-notes {
+  color: var.$grey;
+  display: grid;
+  row-gap: var.$gap8;
+  & > a {
+    text-decoration-line: underline;
+    color: var.$grey;
+  }
+}
+@media (min-width: 768px) {
+  .footer-menu-items {
+    // display: flex;
+    flex-direction: inherit;
+    column-gap: 32px;
+    justify-content: center;
+    display: flex;
+  }
+  .footer__wrapper {
+    padding: 64px 82px;
+    position: relative;
+  }
+  .footerLogo {
+    display: inherit;
+    position: absolute;
+    left: 82px;
+    top: 32px;
+  }
+  .footer-menu {
+    row-gap: 32px;
+    margin-bottom: 48px;
+  }
+}
+
+@media (min-width: 992px) {
+  .footer-menu-items {
+    display: flex;
+  }
+}

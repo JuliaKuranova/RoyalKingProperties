@@ -1,0 +1,39 @@
+.intro {
+  padding: 48px 0;
+  margin: 0 16px;
+}
+
+.filters {
+  margin: 0 16px;
+  padding-bottom: 48px;
+
+  // .btn-yellow {
+  //   font-size: 18px;
+  // }
+
+}
+
+.projects {
+  margin: 0 16px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 340px);
+  row-gap: 48px;
+  column-gap: 20px;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .projects {
+    grid-template-columns: repeat(auto-fit, 412px);
+    margin: 0 82px;
+  }
+
+  .intro {
+    padding: 64px 0;
+    margin: 0 82px;
+  }
+
+  .filters {
+    margin: 0 82px;
+  }
+}
