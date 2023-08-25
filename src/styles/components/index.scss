@@ -12,7 +12,11 @@
 
 @forward './UI/buttons/button.scss';
 
+@forward './filter.scss';
+
 @forward './UI/inputs/my-input.scss';
+@forward './UI/inputs/dropdown-input.scss';
+@forward './UI/inputs/my-input-dropdown.scss';
 
 @forward './UI/images/header-image.scss';
 @forward './UI/images/offer-item.scss';

@@ -2,11 +2,15 @@ import { useState } from "react";
 import MyInput from "../UI/inputs/MyInput";
 import MoreButton from "../UI/buttons/MoreButton";
 
+import 'react-phone-number-input/style.css'
+import PhoneInput from 'react-phone-number-input'
+
 export default function RegisterForm(props) {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
-  const [phone, setPhone] = useState('');
+  // const [phone, setPhone] = useState('');
 
+  const [value, setValue] = useState()
   return (
     <section className="form">
       <h2 className="h1">
@@ -30,14 +34,26 @@ export default function RegisterForm(props) {
           value={email}
           onChange={event => setEmail(event.target.value)}
         />
-        <MyInput
+
+        <div>
+          <span className="label-phone">Your phone</span>
+          <PhoneInput
+            defaultCountry="US"
+            // label='Your phone'
+            placeholder="+971 54 547 7732"
+            value={value}
+            onChange={setValue} />
+        </div>
+
+        {/* <MyInput
           id='phone-input'
           label='Your phone'
           placeholder='+971 54 547 7732 '
           type='phone'
           value={phone}
           onChange={event => setPhone(event.target.value)}
-        />
+        /> */}
+
         <p className='main-text'>Please visit <a href="xxx">the privacy policy</a> to understand how Royal King Properties handles your personal data</p>
         <MoreButton>call me</MoreButton>
       </form>

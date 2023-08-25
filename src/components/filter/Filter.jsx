@@ -8,6 +8,7 @@ import 'primereact/resources/primereact.min.css';
 // import 'react-dropdown/style.css';
 import { Dropdown } from 'primereact/dropdown'
 import { MultiSelect } from 'primereact/multiselect';
+import DropdownInput from '../UI/inputs/DropdownInput';
 
 
 const items = [
@@ -62,7 +63,8 @@ export default function Filter(props) {
 
   const [filterOptions, setFilterOptions] = useState({
     type: [],
-    rooms: []
+    rooms: [],
+    stage: [],
   });
 
   const apartmentTypes = [
@@ -78,10 +80,9 @@ export default function Filter(props) {
     { label: '4 Bedroom', value: 4 },
     { label: '5 Bedroom', value: 5 },
   ];
-
-  const options = [
-    { label: 'Thing 1', value: 1 },
-    { label: 'Thing 2', value: 2 },
+  const stage = [
+    { label: 'Ready', value: 'Ready' },
+    { label: 'Off-plan', value: 'Off-plan' },
   ];
 
   return (
@@ -102,19 +103,17 @@ export default function Filter(props) {
         className="w-full md:w-20rem"
       />
 
-      {/* <Dropdown
-        options={apartmentTypes}
-        onChange={(event) => { console.log(event.value) }}
-        value={apartmentTypes[0]}
+      <DropdownInput text='Any area' placeholder1='From' placeholder2='To' />
+
+      <DropdownInput text='Price range' placeholder1='From, AED' placeholder2='To, AED' />
+
+      <MultiSelect
+        value={filterOptions.stage}
+        onChange={(event) => { setFilterOptions({ ...filterOptions, stage: event.value }); console.log(event.value) }}
+        options={stage}
+        placeholder="Stage"
+        className="w-full md:w-20rem"
       />
-
-      <Dropdown
-        options={bedrooms}
-        onChange={(event) => { console.log(event.value) }}
-        value={bedrooms[0]}
-      /> */}
-
-      <button onClick={() => {filterItems()}}>Tmp button</button>
     </div>
   );
 }
