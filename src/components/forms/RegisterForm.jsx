@@ -1,6 +1,8 @@
 import { useState } from "react";
 import MyInput from "../UI/inputs/MyInput";
-import MoreButton from "../UI/buttons/MoreButton";
+// import MoreButton from "../UI/buttons/MoreButton";
+import CallMe from "../UI/buttons/CallMe";
+
 
 export default function RegisterForm(props) {
   const [name, setName] = useState('');
@@ -39,7 +41,7 @@ export default function RegisterForm(props) {
           onChange={event => setPhone(event.target.value)}
         />
         <p className='main-text'>Please visit <a href="xxx">the privacy policy</a> to understand how Royal King Properties handles your personal data</p>
-        <MoreButton>call me</MoreButton>
+        <CallMe>call me</CallMe>
       </form>
     </section>
   );

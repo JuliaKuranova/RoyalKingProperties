@@ -1,12 +1,14 @@
-@use '../../abstracts/variables.scss' as var;
+@use "../../abstracts/variables.scss" as var;
 
-.footer__wrapper {
+footer {
   background: var.$footer-bg;
+}
+.footer__wrapper {
+  max-width: 1440px;
+  margin: auto;
   padding: 64px 61px;
   text-align: center;
   align-items: center;
-
-
 }
 .footerLogo {
   display: none;
@@ -25,10 +27,20 @@
   color: var.$grey;
   display: grid;
   row-gap: var.$gap8;
-  & > a {
+  a {
     text-decoration-line: underline;
     color: var.$grey;
+
+    &:hover {
+      text-decoration-line: underline;
+      color: white;
+    }
   }
+}
+
+.footer-menu-items li a:hover {
+  transition: 0.8s;
+  color: #e4cfa6;
 }
 @media (min-width: 768px) {
   .footer-menu-items {

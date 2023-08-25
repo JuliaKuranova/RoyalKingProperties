@@ -4,13 +4,20 @@
   font-family: Neutral Face;
   font-size: 24px;
   font-weight: 400;
-  padding: 20px 16px;
-
+  // padding: 20px 16px;
   text-decoration: none;
 
   &.active {
     color: var.$accent-yellow;
   }
+}
+.menu-item:hover {
+  border-bottom: 2px solid white;
+}
+
+.header__nav ul a {
+  height: 70px;
+  padding: 20px 16px;
 }
 
 @media (min-width: 992px) {

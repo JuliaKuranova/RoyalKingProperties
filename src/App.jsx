@@ -9,6 +9,10 @@ import AboutUs from './pages/AboutUs';
 import Services from './pages/Services';
 import Apartments from './pages/Apartments';
 import Project from './pages/Project';
+import ApartmentPage from './pages/ApartmentPage';
+// import Filter from './components/filter/Filter';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+
 
 
 
@@ -17,15 +21,19 @@ function App() {
     <div className="App">
       <Header />
 
-      <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/services' element={<Services />} />
-        <Route path='/about-us' element={<AboutUs />} />
-        <Route path='/contacts' element={<Contacts />} />
-      </Routes>
-      {/* <Apartments /> */}
-      {/* <Project /> */}
+      <Routes> 
+        <Route path='/services' element={<Services />} /> 
+        <Route path='/about-us' element={<AboutUs />} /> 
+        <Route path='/contacts' element={<Contacts />} /> 
+        <Route path='*' element={<Home />} /> 
 
+        <Route path='/project' element={<Project />} /> 
+        <Route path='/apartment-page' element={<ApartmentPage />} /> 
+        <Route path='/apartments' element={<Apartments />} /> 
+        <Route path='/privacy-policy' element={<PrivacyPolicy />} /> 
+      </Routes>
+      {/* <Filter /> */}
+      {/* <PrivacyPolicy /> */}
       <Footer />
     </div>
   );

@@ -2,12 +2,12 @@ export default function OfferItem(props) {
   const tagElems = props.tags?.map(tag => <li>{tag}</li>);
 
   return (
-    <div class="offer-item">
-      <div class="offer-item__wrapper">
+    <a href="" className="offer-item">
+      <div className="offer-item__wrapper">
         <img src={props.img} alt="" />
         {
           tagElems
-            ? <ul class="tags">
+            ? <ul className="tags">
               {tagElems}
             </ul>
             : null
@@ -15,17 +15,17 @@ export default function OfferItem(props) {
       </div>
       {
         props.title
-          ? <div class="offer-item__title">
-            <h3 class="h3">
+          ? <div className="offer-item__title">
+            <h3 className="h3">
               {props.title}
             </h3>
-            <p class="offer-item__description main-text">
+            <p className="offer-item__description main-text">
               {props.description}
             </p>
           </div>
           : null
       }
-    </div>
+    </a>
   );
 }
 

@@ -13,10 +13,10 @@ export default function Logo() {
         //   <img src={logoText}  className='logoText' alt="" />
         // </div>
 
-        <div className='logo'>
+        <a className='logo' href='./home'>
           <img src={logoMob} className='logoMob' alt="" />
           <img src={logoDesk}  className='logoDesk' alt="" />
-        </div>
+        </a>
         
   );
 }

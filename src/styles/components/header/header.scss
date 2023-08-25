@@ -1,13 +1,20 @@
 @use '../../abstracts/variables.scss' as var;
 
 .header {
-  // position: absolute;
-  position: fixed;
+  position: absolute;
+  // position: fixed;
   max-width: 1440px;
   width: 375px;
   height: 58px;
   z-index: 1000;
   width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+
+  &.show-bg {
+    transition: 1.2s;
+    background-color: #181818;
+  }
 
   &__up {
     width: 100%;
@@ -105,11 +112,38 @@
   }
 
   @media (min-width: 992px) {
+
+    .header__up {
+      height: auto;
+      margin-top: 24px;
+      padding: 0 82px;
+
+      // margin-right: 82px;
+    }
+    .header__nav {
+      justify-content: flex-end;
+
+      ul {
+        margin-right: 82px;
+      }
+    }
+  }
+  @media (min-width: 1200px) {
+    // .header__up {
+    //   margin-right: auto;
+    // }
+    .header {
+      height: 138px;
+      // top: 0;
+      // right: 0;
+      background: none;
+    }
     .header__nav {
       opacity: inherit;
       display: flex;
       top: 0;
-      padding: 42px 0;
+      // padding: 42px 0;
+      padding: 22px 0;
       margin-top: 24px;
 
       & ul {
@@ -120,14 +154,9 @@
       }
     }
 
-    .header__up {
-      height: auto;
-      margin-top: 24px;
-      padding: 0 82px;
-    }
-
     .whatsapp-image {
       opacity: inherit !important;
+      z-index: 1000;
     }
 
     .menu-btn {

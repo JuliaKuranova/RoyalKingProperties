@@ -17,6 +17,19 @@
     color: var.$accent-yellow;
   }
   & > .main-text {
-    padding-bottom: 32px;
+    padding-bottom: 24px;
+
+    a {
+      text-decoration: underline;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .register-form {
+    padding-top: 32px;
+  }
+  .register-form > .main-text {
+    padding-top: 24px;
   }
 }

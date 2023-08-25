@@ -1,7 +1,7 @@
 export default function MenuItem(props) {
   return (
-    <a href="" className="menu-item">
+    <span className={`menu-item ${props.active ? 'active' : ''}`}>
       {props.children}
-    </a>
+    </span>
   );
 }
