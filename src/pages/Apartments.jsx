@@ -12,7 +12,7 @@ export default function Apartments() {
   const settings = {
     dots: true,
     slidesToShow: 1,
-    arrows: false
+    // arrows: false
   };
 
   return (

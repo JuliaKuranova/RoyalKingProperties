@@ -74,14 +74,14 @@ $gap8: 8px;
 }
 
 // BTN
-.btn {
+// .btn {
     // leading-trim: both;
     // text-edge: cap;
-    font-family: Neutral Face, sans-serif;
-    font-size: 32px;
-    font-weight: 400;
-    align-self: flex-end;
-  }
+  //   font-family: Neutral Face, sans-serif;
+  //   font-size: 32px;
+  //   font-weight: 400;
+  //   align-self: flex-end;
+  // }
 .btn__more {
   // text-edge: cap;
   font-family: Neutral Face, sans-serif;
@@ -98,6 +98,7 @@ $gap8: 8px;
 @media (min-width: 768px) {
   .h1 {
     font-size: 44px;
+    margin-bottom: 48px;
   }
   .h2 {
     font-size: 28px;

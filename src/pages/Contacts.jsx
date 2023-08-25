@@ -9,7 +9,7 @@ export default function Contacts() {
           <div className='h1'>+971 54 547 7732</div>
           <SocialLinks />
         </section>
-        <section className='contacts__form section'>
+        <section className='contacts__form pb-128'>
             <Map />
             <RegisterForm title='request a call'></RegisterForm>
         </section>

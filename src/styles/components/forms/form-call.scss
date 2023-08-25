@@ -3,7 +3,13 @@
   .map {
     // width: fit-content;
     // margin: auto;
-    max-width: 520px;
+    // max-width: 520px;
+    display: flex;
+    align-items: center;
+
+    img {
+      width: -webkit-fill-available;
+    }
   }
 
 

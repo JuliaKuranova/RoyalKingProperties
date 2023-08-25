@@ -3,4 +3,10 @@
   // margin: auto;
   column-gap: 32px;
   justify-content: center;
+
+  a:hover {
+    path {
+      fill: #C2C2C2;
+    }
+  }
 }
