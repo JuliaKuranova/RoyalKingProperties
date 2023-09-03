@@ -1,8 +1,10 @@
 {
   "files": {
-    "main.css": "/RoyalKingProperties/static/css/main.ad162582.css",
-    "main.js": "/RoyalKingProperties/static/js/main.99f500d1.js",
+    "main.css": "/RoyalKingProperties/static/css/main.931e2cbb.css",
+    "main.js": "/RoyalKingProperties/static/js/main.5dc93415.js",
+    "static/media/popular-photo-1.png": "/RoyalKingProperties/static/media/popular-photo-1.18e59a039a6fa7950a28.png",
     "static/media/header_image.png": "/RoyalKingProperties/static/media/header_image.b5bf89a7ab0757810fea.png",
+    "static/media/Photo3.png": "/RoyalKingProperties/static/media/Photo3.fb3437e018d56ee5a747.png",
     "static/media/KEMPINSKI-RESIDENCES-THE-CREEK.jpg": "/RoyalKingProperties/static/media/KEMPINSKI-RESIDENCES-THE-CREEK.9d79a76eb0ae70f91fb7.jpg",
     "static/media/BURJ-BINGHATTI-JACOB-&-CO-RESIDENCES.jpg": "/RoyalKingProperties/static/media/BURJ-BINGHATTI-JACOB-&-CO-RESIDENCES.ae9a06985400586f641d.jpg",
     "static/media/about-photo.png": "/RoyalKingProperties/static/media/about-photo.144d5992d7757c99de5c.png",
@@ -13,8 +15,6 @@
     "static/media/apartments-photo.png": "/RoyalKingProperties/static/media/apartments-photo.8f54f8a105d98b77b259.png",
     "static/media/Map.png": "/RoyalKingProperties/static/media/Map.94bc06b7ba5991176151.png",
     "static/media/Apartments_1.png": "/RoyalKingProperties/static/media/Apartments_1.e5cd7985244e3f2d47e2.png",
-    "static/media/Photo3.png": "/RoyalKingProperties/static/media/Photo3.b28a34165be23b87d55d.png",
-    "static/media/popular-photo-1.png": "/RoyalKingProperties/static/media/popular-photo-1.713a51a58d2d9fb7f2e7.png",
     "static/media/Logo-desk.svg": "/RoyalKingProperties/static/media/Logo-desk.0e5fcd5ce35db57543691b18f9cd7787.svg",
     "static/media/Logo-mob.svg": "/RoyalKingProperties/static/media/Logo-mob.c3d20bebae307a57a6e98b35c8d59e17.svg",
     "static/media/services-photo-relocation.png": "/RoyalKingProperties/static/media/services-photo-relocation.678909caa3fb967dc767.png",
@@ -29,7 +29,6 @@
     "static/media/NeutralFaceRegular.woff": "/RoyalKingProperties/static/media/NeutralFaceRegular.370198090b765d1482cb.woff",
     "static/media/color.png": "/RoyalKingProperties/static/media/color.6441e63a57ccc5105bad.png",
     "static/media/NeutralFaceRegular.woff2": "/RoyalKingProperties/static/media/NeutralFaceRegular.7c910bf7d94d93874ca7.woff2",
-    "static/media/WhatsApp.svg": "/RoyalKingProperties/static/media/WhatsApp.d1fe6a8f7b567d9fbfa43617d1a822e0.svg",
     "static/media/slick.svg": "/RoyalKingProperties/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/RoyalKingProperties/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/RoyalKingProperties/static/media/slick.c94f7671dcc99dce43e2.ttf",
@@ -42,11 +41,11 @@
     "static/media/arrow-form.svg": "/RoyalKingProperties/static/media/arrow-form.76f054446f42a9834556.svg",
     "static/media/icon-slide-banner-left.svg": "/RoyalKingProperties/static/media/icon-slide-banner-left.ac4646b03c3737ccf871.svg",
     "static/media/icon-slide-banner-right.svg": "/RoyalKingProperties/static/media/icon-slide-banner-right.9703fb74c368de0b1b99.svg",
-    "main.ad162582.css.map": "/RoyalKingProperties/static/css/main.ad162582.css.map",
-    "main.99f500d1.js.map": "/RoyalKingProperties/static/js/main.99f500d1.js.map"
+    "main.931e2cbb.css.map": "/RoyalKingProperties/static/css/main.931e2cbb.css.map",
+    "main.5dc93415.js.map": "/RoyalKingProperties/static/js/main.5dc93415.js.map"
   },
   "entrypoints": [
-    "static/css/main.ad162582.css",
-    "static/js/main.99f500d1.js"
+    "static/css/main.931e2cbb.css",
+    "static/js/main.5dc93415.js"
   ]
 }
