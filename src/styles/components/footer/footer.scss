@@ -39,7 +39,7 @@ footer {
 }
 
 .footer-menu-items li a:hover {
-  transition: 0.8s;
+  transition: var.$transition-time;
   color: #e4cfa6;
 }
 @media (min-width: 768px) {

@@ -1,11 +1,18 @@
+@use "../../../abstracts/variables.scss" as var;
+
 .social-links {
   display: flex;
   // margin: auto;
   column-gap: 32px;
   justify-content: center;
 
+  a path {
+    transition: var.$transition-time;
+  }
+
   a:hover {
     path {
+      transition: var.$transition-time;
       fill: #C2C2C2;
     }
   }

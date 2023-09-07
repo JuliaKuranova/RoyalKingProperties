@@ -1,18 +1,58 @@
 @use '../../../abstracts/variables.scss' as var;
 
 .menu-item {
+  position: relative;
+  cursor: pointer;
+  text-decoration: none; 
+
   font-family: Neutral Face;
   font-size: 24px;
   font-weight: 400;
   // padding: 20px 16px;
   text-decoration: none;
 
+  transition: var.$transition-time;
+
+  line-height: 1;
+
   &.active {
     color: var.$accent-yellow;
   }
 }
-.menu-item:hover {
-  border-bottom: 2px solid white;
+
+// .menu-item:hover {
+//   transition: var.$transition-time;
+//   color: var.$grey;
+
+
+// }
+
+// .active:hover {
+//   color: var.$accent-yellow;
+// }
+
+.menu-item:after {
+	content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px; 
+    background-color: white;
+    transition: width 0.5s;
+}
+
+.menu-item:hover:after {
+	content: "";
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    height: 2px; 
+    background-color: white; 
+    transition: width 0.5s;  
 }
 
 .header__nav ul a {
@@ -25,3 +65,4 @@
     padding: initial;
   }
 }
+

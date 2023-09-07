@@ -1,14 +1,8 @@
 @use "../abstracts/variables.scss" as var;
 
-.btn-test {
-  // background: url(../../assets/img/icon/btn-icon-yellow.svg) no-repeat center;
-  // width: 42px;
-  // height: 42px;
-  // display: flex;
-  // background-image: url("<svg xmlns='http://www.w3.org/2000/svg' width='97' height='39' viewBox='0 0 97 39' fill='none'>
-  // <path d='M60 37.375L95.75 1.625M95.75 1.625H62.8224M95.75 1.625V34.5526' stroke='#F5DEB2' stroke-width="2"/>
-  // </svg>");
-}
+$size: 30px;
+$width: 2px;
+
 .btn-test:hover {
   transform-origin: 50px 20px;
   transform: rotate(45deg);
@@ -17,7 +11,7 @@
     // transform-origin: center;
     // transition: 1s;
     path {
-      transition: 0.8s;
+      transition: var.$transition-time;
       stroke: white;
       transform: rotate(45deg);
       // d: path("M16 24.2789L95.5581 24.279M95.5581 24.279L72.2747 0.995674M95.5581 24.279L72.2747 47.5624");
@@ -42,7 +36,7 @@
   top: 6px;
   border-bottom-right-radius: 5px;
   border-top-right-radius: 5px;
-  transition: all 0.2s ease-in-out;
+  transition: all var.$transition-time ease-in-out;
 }
 .button__arrow:before {
   content: "";
@@ -54,7 +48,7 @@
   background: #06070a;
   left: -3px;
   bottom: 3px;
-  transition: all 0.2s ease-in-out;
+  transition: all var.$transition-time ease-in-out;
 }
 .button {
   position: relative;
@@ -107,6 +101,8 @@
     padding-right: 16px;
     display: flex;
     column-gap: 24px;
+
+    transition: var.$transition-time;
     & > span {
       color: var.$grey;
     }
@@ -123,34 +119,135 @@
     justify-content: space-between;
     align-items: center;
     line-height: 1;
-    padding: 16px 0;
+    // padding: 16px 0;
+    padding: 16px 10px 16px 0;
     border-bottom: 1px solid var.$grey;
+    cursor: pointer;
+    // animation: arrowAnimation 0.8s;
 
-    .arrow path {
-      stroke: #f5deb2;
-    }
-  }
-}
+    &:hover {
+      transition: var.$transition-time;
+      // animation: arrowAnimation 0.8s;
 
-.services-item:hover {
-  transition: 3s;
+      .services__title span {
+        color: #f5deb2;
+      }
 
-  .services__title span {
-    color: #f5deb2;
-  }
-  .services__btn {
-    // transition: 3s;
-    // content: url(../../assets/img/icon/Status=On-hover.svg);
+      // $size: 30px;
+      // $width: 2px;
 
-    // opacity: inherit;
-    // position: absolute;
-    svg {
-      transition: 0.8s;
-      transform: rotate(45deg);
-      path {
-        stroke: white;
+      .arrow {
+        // transform: rotate(0deg);
+        // transition: 0.8s;
+        animation: arrowAnimation 4s;
+
+        // span {
+        //   width: $size * 2;
+        // }
+
+        & span,
+        &:before,
+        &:after {
+          background: #fff;
+        }
+      }
+
+      &:active {
+        .arrow span {
+          width: 106px;
+        }
       }
     }
+  }
+
+  @keyframes arrowAnimation {
+    0% {
+      transform: rotate(-45deg);
+      width: $size;
+    }
+    50% {
+      transform: rotate(0deg);
+      width: $size;
+    }
+    100% {
+      transform: rotate(0deg);
+      width: $size * 2;
+    }
+  }
+
+  /***************
+ * Arrow 1
+ ***************/
+  .arrow {
+    // $size: 30px;
+    // $width: 2px;
+
+    transform: rotate(-45deg);
+
+    cursor: pointer;
+    display: block;
+    width: $size / 1.414;
+    height: $size / 1.414 * 2;
+    position: relative;
+
+    & span,
+    &:before,
+    &:after {
+      background: #f5deb2;
+      content: "";
+      display: block;
+      width: $size;
+      height: $width;
+      position: absolute;
+      top: calc(50% - (#{$width} / 2));
+    }
+
+    & span {
+      width: $size + 15px;
+    }
+
+    &:before {
+      transform: rotate(-45deg);
+    }
+    &:after {
+      transform: rotate(45deg);
+    }
+
+    & span {
+      transform: rotate(1deg);
+    }
+
+    // &:hover {
+    //   transform: rotate(0deg);
+    //   transition: 0.8s;
+    //   span {
+    //     width: $size * 2;
+    //   }
+    // }
+
+    @each $direction in "left" "right" {
+      &.arrow--#{$direction} {
+        & span,
+        &:before,
+        &:after {
+          #{$direction}: 0;
+          transform-origin: #{$direction} 50%;
+        }
+
+        &:before,
+        &:after {
+          transition: #{$direction} 0.3s 0.05s;
+        }
+
+        & span {
+          transition: width 0.3s, #{$direction} 0.3s 0.05s;
+        }
+      }
+    }
+  }
+
+  .filter__home .more-btn:hover svg {
+    rotate: inherit;
   }
 }
 

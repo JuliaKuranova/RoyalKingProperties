@@ -1,18 +1,46 @@
+.project-title {
+  position: absolute;
+  top: -8vh;
+  margin: 0 16px;
+
+  .main-text {
+    display: flex;
+    column-gap: 4px;
+    align-items: center;
+    color: white;
+  }
+}
+
 .intro {
   padding: 48px 0;
   margin: 0 16px;
 }
 
-.filters {
-  margin: 0 16px;
-  padding-bottom: 48px;
+.filter {
+  &__project {
+    margin: 0 16px;
+    padding-bottom: 48px;
+    display: flex;
+    column-gap: 16px;
 
-  // .btn-yellow {
-  //   font-size: 18px;
-  // }
+    &__btn {
+      display: flex;
+      column-gap: 8px;
 
+      .more-btn {
+        padding: 8px 16px;
+        :hover {
+          svg {
+            rotate: inherit;
+          }
+        }
+      }
+    }
+  }
 }
-
+.filter__project__btn .more-btn svg {
+  rotate: inherit;
+}
 .projects {
   margin: 0 16px;
   display: grid;
@@ -23,6 +51,12 @@
 }
 
 @media (min-width: 768px) {
+  .project-title {
+    position: absolute;
+    top: -145px;
+    margin: 0 82px;
+  }
+
   .projects {
     grid-template-columns: repeat(auto-fit, 412px);
     margin: 0 82px;
@@ -33,7 +67,15 @@
     margin: 0 82px;
   }
 
-  .filters {
-    margin: 0 82px;
+  .filter {
+    &__project {
+      margin: 0 82px;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .project-title {
+    top: -110px;
   }
 }

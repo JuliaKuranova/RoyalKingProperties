@@ -1,12 +1,16 @@
+// @use "../../abstracts/variables.scss" as var;
+@use "../../../abstracts/variables.scss" as var;
+
+
 .arrow {
   // height: 100%;
   // width: 100%;
   width: 42px;
   height: 42px;
-  transition: 0.6s;
+  transition: var.$transition-time;
   
   &:hover {
-    transition: 0.6s;
+    transition: var.$transition-time;
     transform: rotate(45deg);
   }
 }

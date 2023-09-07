@@ -1,18 +1,26 @@
 import logoDesk from "../../assets/img/logo/Logo-desk.svg";
 import SocialLinks from "../UI/images/SocialLinks";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
     <footer>
       <div className="footer__wrapper">
-        <a href=".home">
+        {/* <a href=".home">
           <img
             src={logoDesk}
             className="footerLogo"
             alt="Royal King Properties"
           />
-        </a>
+        </a> */}
+
+        <Link className="logo" to="/">
+          <img
+            src={logoDesk}
+            className="footerLogo"
+            alt="Royal King Properties"
+          />
+        </Link>
 
         <div className="footer-menu">
           <SocialLinks />
@@ -21,24 +29,21 @@ export default function Footer() {
           </a>
           <ul className="footer-menu-items h2">
             <li>
-              <a href="">Properties</a>
+              <Link to="/">Properties</Link>
             </li>
             <li>
-              <a href="">Services</a>
+              <Link to="/services">Services</Link>
             </li>
             <li>
-              <a href="">About us</a>
+              <Link to="/about-us">About us</Link>
             </li>
             <li>
-              <a href="">Contacts</a>
+              <Link to="/contacts">Сontacts</Link>
             </li>
           </ul>
         </div>
         <div className="footer-notes hints">
-          <Link to="/privacy-policy">
-            Privacy policy
-          </Link>
-          
+          <Link to="/privacy-policy">Privacy policy</Link>
           <div>© 2023 Royal King Properties. All rights reserved</div>
           <div>Designed by Gleb Kossov</div>
         </div>

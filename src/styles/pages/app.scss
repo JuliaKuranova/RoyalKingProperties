@@ -31,37 +31,63 @@ ol {
 main {
   max-width: 1440px;
   margin: auto;
+  position: relative;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-size: 0px !important;
 }
 
 .section {
   padding-bottom: 64px;
 }
 
-.header__wrapper {
-  position: relative;
+.home-properties .offer-items .slick-slider .slick-arrow:after {
+  top: calc(50% - (2.5px / 3)) !important;
 }
 
-.apartments__banner .slick-slider {
+.header__wrapper {
   position: relative;
+  left: 18px;
+}
 
-  .slick-dots {
-    position: absolute;
-    bottom: 8px;
+.slick-dots {
+  display: flex !important;
+  column-gap: 8px !important;
+  justify-content: center;
+  li {
+    width: 12px !important;
+    height: 12px !important;
+    margin: inherit !important;
 
-    button:before {
-      color: white;
-      opacity: 0.75;
-    }
+    button {
+      width: 12px !important;
+      height: 12px !important;
+      padding: inherit !important;
 
-    .slick-active button:before {
-      opacity: 1;
+      &::before {
+        content: url("./../../assets/img/Point.svg") !important;
+        line-height: 1 !important;
+        width: auto !important;
+        height: auto !important;
+      }
     }
   }
 }
 
-.apartments__banner .slick-slider .slick-arrow {
-  display: none !important;
+// slick-arrow popup
+.popup-content .slick-slider .slick-arrow::before {
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 8px;
 }
+// &:hover {
+//   .popup-content .slick-slider .slick-arrow::before {
+//     opacity: 1;
+//   }
+// }
+//
 
 .pb-128 {
   padding-bottom: 128px;
@@ -69,11 +95,7 @@ main {
 
 // у емейла без подчеркивания
 .email {
-  color: #F5DEB2;
-
-  // :hover {
-      
-  // }
+  color: #f5deb2;
 }
 
 @media (min-width: 768px) {
@@ -83,32 +105,67 @@ main {
 }
 
 @media (min-width: 1200px) {
-  .apartments__banner .slick-slider .slick-arrow {
-    display: flex !important;
-  }
+  $padding: 5%;
+  .apartments__banner .slick-slider {
+    .slick-arrow {
+      // display: flex !important;
+      z-index: 10;
+      :hover {
+        opacity: 1;
+      }
+    }
 
-  .apartments__banner .slick-slider .slick-arrow:hover {
-    opacity: 1;
-  }
+    .slick-prev {
 
-  .apartments__banner .slick-slider .slick-prev {
-    // position: absolute;
-    left: 50px;
-    z-index: 1;
-    padding: 20% 50% 20% 0;
-  }
-  .apartments__banner .slick-slider .slick-prev::before {
-    content: url(../../assets/img/icon/icon-slide-banner-left.svg);
-    // opacity: 1;
-  }
+      // z-index: 1;
+      padding: 15% 25%;
+      &::before {
+        content: url(../../assets/img/icon/icon-slide-banner-left.svg);
+        position: absolute;
+        left: $padding;
+        // right: $padding;
+      }
+    }
 
-  .apartments__banner .slick-slider .slick-next {
-    // position: absolute;
-    right: 50px;
-    padding: 20% 0px 20% 50%;
+    .slick-next {
+      // position: absolute;
+
+      padding: 15% 25%;
+      &::before {
+        content: url(../../assets/img/icon/icon-slide-banner-right.svg);
+        position: absolute;
+        right: $padding;
+        // left: $padding;
+      }
+    }
   }
-  .apartments__banner .slick-slider .slick-next::before {
-    content: url(../../assets/img/icon/icon-slide-banner-right.svg);
-    // opacity: 1;
-  }
+}
+
+// @media (min-width: 1440px) {
+//   $padding2: 620px;
+//   .apartments__banner .slick-slider {
+//     .slick-prev::before {
+//       right: $padding2;
+//     }
+//     .slick-next::before {
+//       left: $padding2;
+//     }
+//   } 
+
+// }
+
+
+.p-multiselect:not(.p-disabled).p-focus {
+  box-shadow: initial !important;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
 }

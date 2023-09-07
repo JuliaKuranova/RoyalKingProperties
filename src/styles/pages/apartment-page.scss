@@ -1,5 +1,9 @@
 .apartment-page {
   padding-top: 58px;
+
+  .main-text:first-child {
+    margin: 32px 16px 0;
+  }
 }
 
 .apartment__card {
@@ -43,7 +47,17 @@
   display: none;
 }
 
+.apartment-page .section .home-properties .offer-items .slick-slider .slick-arrow {
+  top: 50% !important;
+}
+
 @media (min-width: 768px) {
+  .apartment-page {
+
+    .main-text:first-child {
+      margin: 64px 82px 0;
+    }
+  }
 
   .apartment__card {
     margin: 0 82px;

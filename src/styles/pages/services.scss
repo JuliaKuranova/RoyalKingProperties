@@ -9,17 +9,20 @@
 
 .services__items {
   display: grid;
-  row-gap: 32px;
+  // row-gap: 32px;
+  row-gap: 48px;
+
 }
 
 .services__item {
-  display: grid;
-  row-gap: 16px;
+  // display: grid;
+  // row-gap: 16px;
 
   .h3 {
     display: flex;
     flex-direction: column;
     gap: 16px;
+    margin-bottom: 16px;
 
     span {
       color: #F5DEB2;
@@ -53,7 +56,7 @@
 
   .services__item {
     .h3 {
-      flex-direction: inherit;
+      flex-direction: row;
     }
   }
 
@@ -69,6 +72,9 @@
 
   .services__item {
     max-width: 628px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   
   .services__box {
@@ -78,10 +84,3 @@
   }
 }
 
-// F5DEB2/C2C2C2
-// leading-trim: both;
-// text-edge: cap;
-// font-family: Neutral Face;
-// font-size: 24px;
-// font-style: normal;
-// font-weight: 400; 

@@ -1,47 +1,51 @@
+@use "../../../abstracts/variables.scss" as var;
+
 .dropdown-input {
-    &__wrapper.active {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        // background-color: red;
+    z-index: 1;
+  &__wrapper.active {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    // background-color: red;
+  }
+
+  .dropdown-head {
+    width: 160px;
+    height: 50px;
+    background-color: white;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+    z-index: 1000;
+
+    background: #ffffff;
+    border: 1px solid #ced4da;
+    transition: background-color 0.2s, color 0.2s, border-color 0.2s,
+      box-shadow 0.2s;
+    border-radius: 6px;
+  }
+
+  &__content {
+    width: 300px;
+    height: auto;
+    padding: 16px;
+    background-color: white;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    position: absolute;
+    transform: translateY(10px);
+
+    column-gap: 10px;
+
+    input {
+      width: 120px;
     }
-
-    .dropdown-head {
-        width: 100px;
-        height: 50px;
-        background-color: white;
-        color: black;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        cursor: pointer;
-        z-index: 1000;
-
-
-        background: #ffffff;
-        border: 1px solid #ced4da;
-        transition: background-color 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.2s;
-        border-radius: 6px;
-    }
-
-    &__content {
-        width: 300px;
-        height: 50px;
-        background-color: white;
-        color: black;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-
-        position: absolute;
-        transform: translateY(10px);
-
-        column-gap: 10px;
-
-        input {
-            width: 120px;
-        }
-    }
+  }
 }

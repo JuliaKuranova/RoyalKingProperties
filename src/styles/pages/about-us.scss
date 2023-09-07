@@ -7,6 +7,10 @@
     display: grid;
     row-gap: 48px;
 
+    p {
+      color: white;
+    }
+
     div {
       display: grid;
       row-gap: 8px;
@@ -15,13 +19,29 @@
         margin-bottom: 16px;
       }
       p span {
-        color: #F5DEB2;
+        color: #f5deb2;
       }
     }
   }
 }
 
+.about-us__title {
+  width: 100%;
+  left: 50%;
+  // transform: translateX(-50%);
+  transform: translateX(-50%) translateY(-125%);
+  position: absolute;
+  // top: 115px;
+  margin: 0 16px;
+  max-width: 1440px;
+}
+
 @media (min-width: 768px) {
+  .about-us__title {
+    // top: 419px;
+    margin: 0 82px;
+  }
+
   .about-us {
     &__banner {
       margin-bottom: 64px;
@@ -29,10 +49,10 @@
     &__info {
       margin: 0 82px;
       row-gap: 32px;
-  
+
       div {
         row-gap: 16px;
-  
+
         h2 {
           margin-bottom: inherit;
         }
@@ -40,4 +60,3 @@
     }
   }
 }
-

@@ -16,6 +16,10 @@
   p a {
     color: var.$accent-yellow;
   }
+  p a:hover {
+    color: var.$accent-yellow-hover;
+  }
+
   & > .main-text {
     padding-bottom: 24px;
 
@@ -33,3 +37,5 @@
     padding-top: 24px;
   }
 }
+
+

@@ -1,17 +1,37 @@
 .header-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   // position: absolute;
   width: 100%;
   // height: 228px;
   line-height: 0;
-
+  // min-height: 228px;
+  // max-height: 584px;
+  // height: calc(100vw / 2.4658);
+  height: 584px;
   // z-index: -1;
 
-  opacity: .8;
+
+  opacity: 0.8;
 
   img {
+    position: absolute;
     // height: 100%;
-    height: auto;
+    // height: auto;
     width: 100%;
+    // height: 584px;
+    // background-repeat: no-repeat;
+
+    // background-image: url("https://e0.pxfuel.com/wallpapers/754/599/desktop-wallpaper-high-resolution-nature-road-full-full-size-background.jpg");
+
+    // background-size: ;
+
+    min-height: 228px;
     max-height: 584px;
+    // background-image: url("https://images.ctfassets.net/hrltx12pl8hq/3Z1N8LpxtXNQhBD5EnIg8X/975e2497dc598bb64fde390592ae1133/spring-images-min.jpg");
+
+    object-fit: cover;
+    // height: 100%;
   }
 }

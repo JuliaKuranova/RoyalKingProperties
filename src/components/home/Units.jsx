@@ -18,9 +18,6 @@ export default function Units() {
       <Link to='/project'>
         <UnitImage img={unitImage3} >project</UnitImage>
       </Link>
-      {/* <UnitImage img={unitImage1} />
-      <UnitImage img={unitImage2} />
-      <UnitImage img={unitImage3} /> */}
     </section>
   );
 }

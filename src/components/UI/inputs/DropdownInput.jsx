@@ -25,7 +25,9 @@ export default function DropdownInput(props) {
               type='number'
             // value={name}
             // onChange={event => setName(event.target.value)}
+              metric={props.metric}
             />
+            {/* <span>{props.metric}</span> */}
             <MyInputDropdown
               // id='name-input'
               // label='Your name'
@@ -33,6 +35,7 @@ export default function DropdownInput(props) {
               type='number'
             // value={name}
             // onChange={event => setName(event.target.value)}
+            metric={props.metric}
             />
           </div>
           : null

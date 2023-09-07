@@ -16,7 +16,7 @@
 
 @forward './UI/buttons/button.scss';
 
-@forward './filter.scss';
+@forward './filter/filter.scss';
 
 @forward './UI/inputs/my-input.scss';
 @forward './UI/inputs/dropdown-input.scss';
@@ -32,5 +32,7 @@
 @forward './UI/svgs/arrow.scss';
 
 @forward './UI/text/MenuItem.scss';
+
+@forward './../components/UI/images/apartments-photo.scss';
 
 

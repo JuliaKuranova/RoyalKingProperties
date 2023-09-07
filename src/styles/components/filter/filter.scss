@@ -1,0 +1,101 @@
+.dropdown-head span:first-child,
+.p-multiselect-label,
+.p-multiselect-item {
+  font-family: "Jost Regular";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 140%;
+  color: black !important;
+  padding: 8px 0 8px 16px !important;
+}
+
+.dropdown-head,
+.p-multiselect {
+  border: none !important;
+  border-radius: 0 !important;
+}
+
+.dropdown-head span svg {
+  padding: 8px 16px !important;
+  width: auto !important;
+  height: auto !important;
+}
+.p-multiselect {
+  height: 41px !important;
+}
+.p-multiselect-header {
+  display: none !important;
+}
+
+.p-multiselect-label-container {
+  text-overflow: ellipsis;
+  width: 140px;
+}
+
+.filter {
+  display: flex;
+  column-gap: 4px;
+}
+
+.dropdown-head {
+  height: 41px !important;
+}
+
+.btn-yellow {
+  padding: 8px 16px !important;
+  border: none !important;
+}
+
+// выпадашки
+
+.p-multiselect:focus {
+  box-shadow: inherit !important;
+}
+
+.p-multiselect-panel {
+  border-radius: inherit !important;
+  .p-multiselect-items {
+    padding: inherit !important;
+    .p-multiselect-item {
+      padding: 8px 16px !important;
+      &:focus {
+        box-shadow: inherit !important;
+      }
+      .p-checkbox {
+        margin-right: 8px !important;
+        &-box {
+          border: 1px solid #f5deb2;
+          background: inherit;
+          width: 18px;
+          height: 18px;
+          border-radius: inherit;
+
+          &:hover {
+            border-color: #E4CFA6 !important;
+          }
+
+          .p-checkbox-icon.p-icon {
+            width: 12px;
+            height: 12px;
+            color: black;
+          }
+        }
+      }
+      // .p-highlight {
+      //   background: #F0F0F0 !important;
+      // }
+    }
+  }
+}
+
+.p-multiselect-panel .p-multiselect-items .p-multiselect-item.p-highlight {
+  background: #F0F0F0 !important;
+}
+
+.p-checkbox .p-checkbox-box.p-highlight {
+  border-color: #F0F0F0 !important;
+  background: #F0F0F0 !important;
+}
+
+@media (min-width: 768px) {
+}
