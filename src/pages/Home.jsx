@@ -9,11 +9,20 @@ import CallMe from "../components/UI/buttons/CallMe";
 import Arrow from "../components/UI/svgs/Arrow";
 import Filter from "../components/filter/Filter";
 import MoreButton from "../components/UI/buttons/MoreButton";
+import { useState } from "react";
 
 export default function Home() {
+
+  const [isOpenA, setIsOpenA] = useState(false);
+  const closeInputs = (event) => {
+    if (event.target.nodeName !== 'INPUT') {
+      setIsOpenA(false);
+    }
+  };
+
   return (
     <>
-      <HeaderImage img={headerImage} hasFilter={true} />
+      <HeaderImage img={headerImage} hasFilter={true} isOpenA={isOpenA} setIsOpenA={setIsOpenA} closeInputs={closeInputs}/>
 
       <main>
         {/* <div className="filter__banner">

@@ -26,8 +26,11 @@ export default function Apartments() {
     <>
       <section className="apartments__banner section">
         <Slider {...settings}>
-          <HeaderImage img={sliaderImg1} />
-          <HeaderImage img={sliaderImg2} />
+          <HeaderImage img={sliaderImg1} className="test" />
+          {/* <img src={sliaderImg1} alt="" className="test"/> */}
+          <HeaderImage img={sliaderImg2} className="test" />
+          {/* <img src={sliaderImg2} alt="" className="test" /> */}
+
         </Slider>
       </section>
       <main>

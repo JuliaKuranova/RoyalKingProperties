@@ -47,6 +47,7 @@ const items = [
 ];
 
 export default function Filter(props) {
+  console.log('test props from filter', props);
   const ref1 = useRef();
   function filterItems() {
     const keys = ["type", "rooms"];
@@ -147,13 +148,22 @@ export default function Filter(props) {
         className="w-full md:w-20rem"
       />
 
-      <DropdownInput text="Any area" placeholder1="From" placeholder2="To" metric='m²'/>
+      <DropdownInput
+          text="Any area"
+          placeholder1="From" 
+          placeholder2="To"
+          metric='m²'
+          isOpenA={props.isOpenA}
+          setIsOpenA={props.setIsOpenA}
+      />
 
       <DropdownInput
         text="Price range"
         placeholder1="From"
         placeholder2="To"
         metric='AED'
+        isOpenA={props.isOpenA}
+        setIsOpenA={props.setIsOpenA}
       />
 
       <MultiSelect

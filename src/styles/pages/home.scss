@@ -270,6 +270,17 @@ $width: 2px;
   }
 }
 
+.header-image {
+  position: relative;
+  .test {
+    top: 50%;
+    position: absolute;
+    z-index: 100;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
 @media (min-width: 992px) {
   .services {
     display: flex;

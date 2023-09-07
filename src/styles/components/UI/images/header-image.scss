@@ -1,37 +1,55 @@
+// .header-image {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   width: 100%;
+//   line-height: 0;
+//   height: 584px;
+
+//   .img {
+//     position: absolute;
+//     opacity: 0.8;
+//     width: 100%;
+//     min-height: 228px;
+//     max-height: 584px;
+//     object-fit: cover;
+
+
+//     background-size: cover !important;
+//     background-repeat: no-repeat !important;
+//     width: 100%;
+//     height: 100%;
+//   }
+
+//   h1 {
+//     z-index: 1;
+//   }
+// }
+
+
+
+
+
+
+// .header-image {
+//   background-image: url(../../../../assets/img/header_image.png);
+// }
+
+
+
+
+
 .header-image {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  // position: absolute;
   width: 100%;
-  // height: 228px;
   line-height: 0;
-  // min-height: 228px;
-  // max-height: 584px;
-  // height: calc(100vw / 2.4658);
-  height: 584px;
-  // z-index: -1;
 
-
-  opacity: 0.8;
 
   img {
-    position: absolute;
-    // height: 100%;
-    // height: auto;
+    opacity: .8;
+    height: auto;
     width: 100%;
-    // height: 584px;
-    // background-repeat: no-repeat;
-
-    // background-image: url("https://e0.pxfuel.com/wallpapers/754/599/desktop-wallpaper-high-resolution-nature-road-full-full-size-background.jpg");
-
-    // background-size: ;
-
     min-height: 228px;
     max-height: 584px;
-    // background-image: url("https://images.ctfassets.net/hrltx12pl8hq/3Z1N8LpxtXNQhBD5EnIg8X/975e2497dc598bb64fde390592ae1133/spring-images-min.jpg");
-
     object-fit: cover;
-    // height: 100%;
   }
 }
