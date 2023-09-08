@@ -12,7 +12,7 @@
   }
 
   .dropdown-head {
-    width: 160px;
+    width: max-content;
     height: 50px;
     background-color: white;
     color: black;
@@ -40,7 +40,7 @@
     justify-content: space-around;
 
     position: absolute;
-    transform: translateY(10px);
+    transform: translateY(4px);
 
     column-gap: 10px;
 

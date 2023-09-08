@@ -15,11 +15,11 @@ export default function HeaderImage(props) {
         className="img"
       /> */}
 
-      <div className="test">
+      {/* <div className="test"> */}
         {props.title ? <h1 className="h1">{props.title}</h1> : null}
         {props.hasFilter ? <Filter isOpenA={props.isOpenA} setIsOpenA={props.setIsOpenA}/> : null}
       </div>
-    </div>
+    // </div>
   );
 }
 
