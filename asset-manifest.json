@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/RoyalKingProperties/static/css/main.4f9fd41f.css",
-    "main.js": "/RoyalKingProperties/static/js/main.620feda4.js",
+    "main.css": "/RoyalKingProperties/static/css/main.5cc9a8c6.css",
+    "main.js": "/RoyalKingProperties/static/js/main.1be91014.js",
     "static/media/popular-photo-1.png": "/RoyalKingProperties/static/media/popular-photo-1.18e59a039a6fa7950a28.png",
     "static/media/header_image.png": "/RoyalKingProperties/static/media/header_image.b5bf89a7ab0757810fea.png",
     "static/media/Photo3.png": "/RoyalKingProperties/static/media/Photo3.fb3437e018d56ee5a747.png",
@@ -40,11 +40,11 @@
     "static/media/icon-slide-banner-left.svg": "/RoyalKingProperties/static/media/icon-slide-banner-left.ac4646b03c3737ccf871.svg",
     "static/media/icon-slide-banner-right.svg": "/RoyalKingProperties/static/media/icon-slide-banner-right.9703fb74c368de0b1b99.svg",
     "static/media/Point.svg": "/RoyalKingProperties/static/media/Point.0077123d6bb673f2b933.svg",
-    "main.4f9fd41f.css.map": "/RoyalKingProperties/static/css/main.4f9fd41f.css.map",
-    "main.620feda4.js.map": "/RoyalKingProperties/static/js/main.620feda4.js.map"
+    "main.5cc9a8c6.css.map": "/RoyalKingProperties/static/css/main.5cc9a8c6.css.map",
+    "main.1be91014.js.map": "/RoyalKingProperties/static/js/main.1be91014.js.map"
   },
   "entrypoints": [
-    "static/css/main.4f9fd41f.css",
-    "static/js/main.620feda4.js"
+    "static/css/main.5cc9a8c6.css",
+    "static/js/main.1be91014.js"
   ]
 }
