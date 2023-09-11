@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/RoyalKingProperties/static/css/main.0e36d0ce.css",
-    "main.js": "/RoyalKingProperties/static/js/main.8fb16153.js",
+    "main.css": "/RoyalKingProperties/static/css/main.c5ff420f.css",
+    "main.js": "/RoyalKingProperties/static/js/main.d3d9c326.js",
     "static/media/popular-photo-1.png": "/RoyalKingProperties/static/media/popular-photo-1.18e59a039a6fa7950a28.png",
     "static/media/header_image.png": "/RoyalKingProperties/static/media/header_image.b5bf89a7ab0757810fea.png",
     "static/media/Photo3.png": "/RoyalKingProperties/static/media/Photo3.fb3437e018d56ee5a747.png",
@@ -14,7 +14,12 @@
     "static/media/units-Item-1.png": "/RoyalKingProperties/static/media/units-Item-1.b4d2f7c573c3286c5eca.png",
     "static/media/apartments-photo.png": "/RoyalKingProperties/static/media/apartments-photo.8f54f8a105d98b77b259.png",
     "static/media/Map.png": "/RoyalKingProperties/static/media/Map.94bc06b7ba5991176151.png",
+    "static/media/Photo-83.png": "/RoyalKingProperties/static/media/Photo-83.1f365fcc4bc7bdd3109d.png",
+    "static/media/Photo-88.png": "/RoyalKingProperties/static/media/Photo-88.74354880b4e99589b4b5.png",
+    "static/media/offer-photo-2.png": "/RoyalKingProperties/static/media/offer-photo-2.f66a71584f96f8535a23.png",
     "static/media/Apartments_1.png": "/RoyalKingProperties/static/media/Apartments_1.e5cd7985244e3f2d47e2.png",
+    "static/media/offer-photo-3.png": "/RoyalKingProperties/static/media/offer-photo-3.6ecc024b1a05632f4f83.png",
+    "static/media/Photo-75.png": "/RoyalKingProperties/static/media/Photo-75.5295e455fa9faee9f710.png",
     "static/media/Logo-desk.svg": "/RoyalKingProperties/static/media/Logo-desk.0e5fcd5ce35db57543691b18f9cd7787.svg",
     "static/media/Logo-mob.svg": "/RoyalKingProperties/static/media/Logo-mob.c3d20bebae307a57a6e98b35c8d59e17.svg",
     "static/media/services-photo-relocation.png": "/RoyalKingProperties/static/media/services-photo-relocation.678909caa3fb967dc767.png",
@@ -40,11 +45,11 @@
     "static/media/icon-slide-banner-left.svg": "/RoyalKingProperties/static/media/icon-slide-banner-left.ac4646b03c3737ccf871.svg",
     "static/media/icon-slide-banner-right.svg": "/RoyalKingProperties/static/media/icon-slide-banner-right.9703fb74c368de0b1b99.svg",
     "static/media/Point.svg": "/RoyalKingProperties/static/media/Point.0077123d6bb673f2b933.svg",
-    "main.0e36d0ce.css.map": "/RoyalKingProperties/static/css/main.0e36d0ce.css.map",
-    "main.8fb16153.js.map": "/RoyalKingProperties/static/js/main.8fb16153.js.map"
+    "main.c5ff420f.css.map": "/RoyalKingProperties/static/css/main.c5ff420f.css.map",
+    "main.d3d9c326.js.map": "/RoyalKingProperties/static/js/main.d3d9c326.js.map"
   },
   "entrypoints": [
-    "static/css/main.0e36d0ce.css",
-    "static/js/main.8fb16153.js"
+    "static/css/main.c5ff420f.css",
+    "static/js/main.d3d9c326.js"
   ]
 }
