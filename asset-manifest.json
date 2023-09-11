@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/RoyalKingProperties/static/css/main.780b5500.css",
+    "main.css": "/RoyalKingProperties/static/css/main.c5ff420f.css",
     "main.js": "/RoyalKingProperties/static/js/main.81dd475f.js",
     "static/media/popular-photo-1.png": "/RoyalKingProperties/static/media/popular-photo-1.18e59a039a6fa7950a28.png",
     "static/media/header_image.png": "/RoyalKingProperties/static/media/header_image.b5bf89a7ab0757810fea.png",
@@ -27,12 +27,13 @@
     "static/media/Photo-5.png": "/RoyalKingProperties/static/media/Photo-5.bee7abe3bc0404a61d48.png",
     "static/media/Photo-2.png": "/RoyalKingProperties/static/media/Photo-2.fcb909e8df0052cb7324.png",
     "static/media/photo-women.png": "/RoyalKingProperties/static/media/photo-women.fe588a1c299751d137cd.png",
-    "static/media/NeutralFace.otf": "/RoyalKingProperties/static/media/NeutralFace.eaa53753519ad3d217c9.otf",
     "static/media/Jost-Medium.woff": "/RoyalKingProperties/static/media/Jost-Medium.1b95d0eff50cdbc22357.woff",
     "static/media/Jost-Regular.woff": "/RoyalKingProperties/static/media/Jost-Regular.14d3cdf1b91c3d99512b.woff",
     "static/media/Jost-Medium.woff2": "/RoyalKingProperties/static/media/Jost-Medium.b4501bed7215e6a791e8.woff2",
     "static/media/Jost-Regular.woff2": "/RoyalKingProperties/static/media/Jost-Regular.aec9fa0a38b857c6e545.woff2",
+    "static/media/NeutralFaceRegular.woff": "/RoyalKingProperties/static/media/NeutralFaceRegular.370198090b765d1482cb.woff",
     "static/media/color.png": "/RoyalKingProperties/static/media/color.6441e63a57ccc5105bad.png",
+    "static/media/NeutralFaceRegular.woff2": "/RoyalKingProperties/static/media/NeutralFaceRegular.7c910bf7d94d93874ca7.woff2",
     "static/media/slick.svg": "/RoyalKingProperties/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/RoyalKingProperties/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/RoyalKingProperties/static/media/slick.c94f7671dcc99dce43e2.ttf",
@@ -44,11 +45,11 @@
     "static/media/icon-slide-banner-left.svg": "/RoyalKingProperties/static/media/icon-slide-banner-left.ac4646b03c3737ccf871.svg",
     "static/media/icon-slide-banner-right.svg": "/RoyalKingProperties/static/media/icon-slide-banner-right.9703fb74c368de0b1b99.svg",
     "static/media/Point.svg": "/RoyalKingProperties/static/media/Point.0077123d6bb673f2b933.svg",
-    "main.780b5500.css.map": "/RoyalKingProperties/static/css/main.780b5500.css.map",
+    "main.c5ff420f.css.map": "/RoyalKingProperties/static/css/main.c5ff420f.css.map",
     "main.81dd475f.js.map": "/RoyalKingProperties/static/js/main.81dd475f.js.map"
   },
   "entrypoints": [
-    "static/css/main.780b5500.css",
+    "static/css/main.c5ff420f.css",
     "static/js/main.81dd475f.js"
   ]
 }
