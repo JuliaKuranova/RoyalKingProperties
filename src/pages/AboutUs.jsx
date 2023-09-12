@@ -14,8 +14,6 @@ export default function AboutUs() {
       </div>
 
       <main className="about-us">
-
-
         <div className="about-us__info section">
           <p className="main-text">
             Welcome to Royal King Properties, the premier real estate agency
@@ -31,21 +29,25 @@ export default function AboutUs() {
               has a proven track record of delivering exceptional results.
             </p>
             <p className="main-text">
-              <span>Leading Real Estate Agency in Dubai.</span> As a top-rated
-              and highly recommended real estate agency, Royal King Properties
-              has a proven track record of delivering exceptional results.
+              <span>Expert Market Analysis. </span>Our team of experienced
+              agents possesses extensive knowledge of Dubai's real estate
+              market. We conduct thorough market analysis, the latest trends,
+              prime locations, and investment opportunities to provide accurate
+              insights and help you make informed decisions.
             </p>
             <p className="main-text">
-              <span>Leading Real Estate Agency in Dubai.</span> As a top-rated
-              and highly recommended real estate agency, Royal King Properties
-              has a proven track record of delivering exceptional results.
+              <span>Extensive Property Portfolio. </span>
+              Explore our extensive property portfolio, ranging from luxurious
+              residential properties to prime commercial spaces. We carefully
+              curate our listings to offer diverse options catering to different
+              preferences and budgets.
             </p>
             <p className="main-text">
-              <span>Luxury Property Specialists. </span> Royal King Properties
-              specializes in luxury properties for high-end buyers and
-              investors. We provide access to exclusive listings and
-              ultra-personalized services tailored to the discerning tastes of
-              luxury real estate clients.
+              <span>Luxury Property Specialists. </span>
+              Royal King Properties specializes in luxury properties for
+              high-end buyers and investors. We provide access to exclusive
+              listings and ultra-personalized services tailored to the
+              discerning tastes of luxury real estate clients.
             </p>
           </div>
           <div className="">

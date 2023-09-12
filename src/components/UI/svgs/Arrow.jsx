@@ -13,7 +13,7 @@ export default function Arrow() {
     //     stroke-width="4"
     //   />
     // </svg>
-    <div className="w">
+    // <div className="w">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="24"
@@ -28,6 +28,6 @@ export default function Arrow() {
           fill="white"
         />
       </svg>
-    </div>
+    // </div>
   );
 }

@@ -123,11 +123,13 @@ $width: 2px;
     padding: 16px 10px 16px 0;
     border-bottom: 1px solid var.$grey;
     cursor: pointer;
-    // animation: arrowAnimation 0.8s;
+    // animation: arrowAnimation 04s;
+    transition: var.$transition-time;
 
     &:hover {
       transition: var.$transition-time;
       // animation: arrowAnimation 0.8s;
+      // animation: arrowAnimation 4s;
 
       .services__title span {
         color: #f5deb2;
@@ -137,14 +139,9 @@ $width: 2px;
       // $width: 2px;
 
       .arrow {
-        // transform: rotate(0deg);
-        // transition: 0.8s;
-        animation: arrowAnimation 4s;
-
-        // span {
-        //   width: $size * 2;
-        // }
-
+        // animation: arrowAnimation 4s ease-in-out infinite;
+        transition: var.$transition-time;
+        
         & span,
         &:before,
         &:after {
@@ -157,21 +154,6 @@ $width: 2px;
           width: 106px;
         }
       }
-    }
-  }
-
-  @keyframes arrowAnimation {
-    0% {
-      transform: rotate(-45deg);
-      width: $size;
-    }
-    50% {
-      transform: rotate(0deg);
-      width: $size;
-    }
-    100% {
-      transform: rotate(0deg);
-      width: $size * 2;
     }
   }
 
@@ -310,8 +292,14 @@ $width: 2px;
   .services {
     margin: 0 82px 128px;
 
-    &-item {
-      width: 628px;
-    }
+    // &-item {
+    //   width: 628px;
+    // }
+  }
+}
+
+@media (min-width: 1440px) {
+  .services-item {
+    width: 628px;
   }
 }

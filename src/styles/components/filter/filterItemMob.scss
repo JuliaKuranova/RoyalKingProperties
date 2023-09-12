@@ -1,0 +1,116 @@
+.mobile-filter {
+  // display: none;
+  padding: 8px 16px 12px;
+  display: flex;
+  flex-direction: column;
+  // &.show {
+  //   display: grid;
+  // }
+  row-gap: 16px;
+
+  &__intro {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -140%);
+    width: max-content;
+
+    .h2 {
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 140%;
+      margin-bottom: 30px;
+    }
+
+    .more-btn {
+      font-size: 18px;
+      column-gap: 8px;
+      padding: 8px 16px;
+      width: max-content;
+      margin: auto;
+
+      svg path {
+        fill: white;
+      }
+
+      &:hover {
+        svg {
+          rotate: none;
+          path {
+            fill: initial;
+          }
+        }
+      }
+    }
+  }
+
+  &__item {
+    padding: 8px 16px;
+    border: 1px solid #5d5d5d;
+    color: white;
+  }
+  &__items {
+    display: flex;
+    column-gap: 8px;
+  }
+  //   &__price {
+  //     display: flex;
+  //     column-gap: 8px;
+  //   }
+  &__btn {
+    display: flex;
+    column-gap: 8px;
+    .more-btn:first-child {
+      width: min-content;
+      padding: 12px 13px;
+    }
+  }
+  .active {
+    border: 1px solid #f5deb2;
+    color: #f5deb2;
+  }
+}
+.mobile-filter__price,
+.mobile-filter__area {
+  display: flex !important;
+  column-gap: 8px;
+}
+
+.mobile-filter__apartments,
+.mobile-filter__bedrooms,
+.mobile-filter__stage,
+.mobile-filter__price,
+.mobile-filter__area{
+  display: grid;
+  row-gap: 8px;
+}
+
+.mobile-filter__price div,
+.mobile-filter__area div {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2px;
+}
+@media (min-width: 576px) {
+    .mobile-filter__intro {
+        transform: translate(-50%, -160%);
+    }
+}
+
+@media (min-width: 768px) {
+    .mobile-filter__intro {
+        transform: translate(-50%, -200%);
+    }
+}
+
+@media (min-width: 992px) {
+  .mobile-filter {
+    &__wrapper {
+      display: none;
+    }
+  }
+}
+    // .mobile-filter__intro {
+    //     transform: translate(-50%, -250%);
+    // }
+
+

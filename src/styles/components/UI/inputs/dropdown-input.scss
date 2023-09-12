@@ -30,7 +30,6 @@
   }
 
   &__content {
-    width: 300px;
     height: auto;
     padding: 16px;
     background-color: white;
@@ -48,4 +47,11 @@
       width: 120px;
     }
   }
+
+  &__first {
+    width: 350px;
+  } 
+  &__last {
+    width: 430px;
+  } 
 }

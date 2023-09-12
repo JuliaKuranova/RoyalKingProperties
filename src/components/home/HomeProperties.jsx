@@ -3,6 +3,8 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 
 import popularPhoto1 from "../../assets/img/popular-photo-1.png";
+import popularPhoto2 from "../../assets/img/offer-photo-2.png";
+import popularPhoto3 from "../../assets/img/offer-photo-3.png";
 import OfferItem from "../UI/images/OfferItem";
 import { useRef } from "react";
 import { useEffect } from "react";
@@ -40,30 +42,30 @@ export default function HomeProperties(props) {
         <Slider {...settings}>
           <OfferItem
             img={popularPhoto1}
-            tags={["hello", "world", "duck", "test"]}
-            title={"1 000 000 AED"}
+            tags={["1 bedroom", "2 baths", "64 m2", "Off-plan", "Off-plan"]}
+            title={"3 672 900 AED AED"}
             description="aKempinski Residences The Creek, Dubai Healthcare City Phase 2, Al Jaddaf, Dubai"
           />
           <OfferItem
-            img={popularPhoto1}
-            tags={["hello", "world", "duck", "test"]}
-            title={"2 000 000 AED"}
-            description="aKempinski Residences The Creek, Dubai Healthcare City Phase 2, Al Jaddaf, Dubai"
+            img={popularPhoto2}
+            tags={["1 bedroom", "2 baths", "Off-plan", "Off-plan", ]}
+            title={"7 280 000 AED"}
+            description="Villa, Saadiyat Lagoons"
+          />
+          <OfferItem
+            img={popularPhoto3}
+            tags={["1 bedroom", "2 baths", "Off-plan", "Off-plan", ]}
+            title={"14 279 999 AED"}
+            description="Villa, Saadiyat Lagoons"
           />
           <OfferItem
             img={popularPhoto1}
             tags={["hello", "world", "duck", "test"]}
             title={"3 000 000 AED"}
-            description="aKempinski Residences The Creek, Dubai Healthcare City Phase 2, Al Jaddaf, Dubai"
+            description="Burj Binghatti Jacob & CO residences"
           />
           <OfferItem
-            img={popularPhoto1}
-            tags={["hello", "world", "duck", "test"]}
-            title={"3 000 000 AED"}
-            description="aKempinski Residences The Creek, Dubai Healthcare City Phase 2, Al Jaddaf, Dubai"
-          />
-          <OfferItem
-            img={popularPhoto1}
+            img={popularPhoto2}
             tags={["hello", "world", "duck", "test"]}
             title={"3 000 000 AED"}
             description="aKempinski Residences The Creek, Dubai Healthcare City Phase 2, Al Jaddaf, Dubai"

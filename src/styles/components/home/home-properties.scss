@@ -12,15 +12,13 @@
     $size-arrow: 16px;
     $width: 2px;
 
-    .slick-arrow {
+    .slick-arrow {      
       top: 30% !important;
       z-index: 1;
       position: absolute;
 
       cursor: pointer;
       display: block;
-      // width: $size / 1.414;
-      // height: $size / 1.414 * 2;
       // position: relative;
       background: #f5deb2 !important;
       border-radius: 50px;
@@ -33,7 +31,7 @@
         background: black;
         content: "";
         display: block;
-        // width: $size-arrow;
+        width: $size-arrow;
         height: $width;
         position: absolute;
         top: calc(50% - (#{$width} / 2));
@@ -41,30 +39,33 @@
 
       &:before {
         transform: rotate(-45deg);
-        width: $size-arrow;
+        // width: $size-arrow;
       }
       &:after {
         transform: rotate(45deg);
-        width: $size-arrow + 2px;
+        // width: $size-arrow + 2px;
       }
 
       & span {
         width: 0;
       }
       &:hover span {
-        width: 23px;
+        width: $size-arrow + 8px;
       }
     }
 
     $padding_arrow: 15px;
+    $hover-span: 10px;
+    $pd-slider: -10px;
 
     .slick-prev {
-      left: -50px;
+      left: $pd-slider;
 
       & span,
       &:before,
       &:after {
-        left: $padding_arrow;
+        // left: $padding_arrow;
+        left: $size-arrow;
         transform-origin: left 50%;
       }
 
@@ -81,19 +82,20 @@
         & span,
         &:before,
         &:after {
-          left: 9px;
+          left: $hover-span;
         }
       }
     }
 
     .slick-next {
-      right: -50px;
+      right: $pd-slider;
 
       & span,
       &:before,
       &:after {
-        right: $padding_arrow;
-        transform-origin: right 100%;
+        // right: $padding_arrow;
+        right: $size-arrow;
+        transform-origin: right 50%;
       }
 
       &:before,
@@ -103,14 +105,15 @@
 
       & span {
         transition: width 0.3s, right 0.3s 0.05s;
-        top: 47%;
+        // top: 47%;
       }
 
       &:hover {
         & span,
         &:before,
         &:after {
-          right: 12px;
+          // right: 12px;
+          right: $hover-span;
         }
       }
     }
@@ -122,6 +125,14 @@
 }
 
 @media (min-width: 768px) {
+  $pd-slider-d: -50px;
+
+  .slick-prev {
+    left: $pd-slider-d !important;
+  }
+  .slick-next {
+    right: $pd-slider-d !important;
+  }
   .home-properties {
     margin: 0 82px;
   }
@@ -191,7 +202,7 @@
 //   transform: rotate(45deg);
 //   width: 20px;
 //   height: 20px;
-//   background: #e4cfa6;
+//   background: #DAC6A0;
 //   left: 20px;
 //   bottom: 15px;
 //   transition: all 0.8s ease-in-out;
@@ -210,3 +221,5 @@
     column-gap: 25px;
   }
 }
+
+

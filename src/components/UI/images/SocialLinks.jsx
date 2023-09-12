@@ -1,12 +1,7 @@
-// import instagram from "../../../assets/img/Instagram.svg";
-// import whatsApp from "../../../assets/img/WhatsApp.svg";
-// import telegram from "../../../assets/img/Telegram.svg";
-
 export default function SocialLinks() {
   return (
     <div className="social-links">
-      <a href="">
-        {/* <img src={instagram} alt="Instagram" /> */}
+      <a href="https://www.instagram.com/royalkingestate/ ">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="32"
@@ -27,7 +22,7 @@ export default function SocialLinks() {
           </defs>
         </svg>
       </a>
-      <a href="">
+      <a href="https://wa.me/message/6REYFPXSCUAJK1">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="32"
@@ -52,7 +47,7 @@ export default function SocialLinks() {
           </defs>
         </svg>
       </a>
-      <a href="">
+      <a href="https://t.me/rg_ruksha">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="32"

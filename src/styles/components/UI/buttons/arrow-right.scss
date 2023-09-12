@@ -1,0 +1,127 @@
+$size: 30px;
+$width: 2px;
+
+.arrow-right {
+  // $size: 30px;
+  // $width: 2px;
+
+  display: flex;
+  width: $size;
+
+  transform: rotate(-45deg);
+
+  cursor: pointer;
+  // display: block;
+  width: $size / 1.414;
+  height: $size / 1.414 * 2;
+  position: relative;
+
+  & span,
+  &:before,
+  &:after {
+    background: #f5deb2;
+    content: "";
+    display: block;
+    width: $size;
+    height: $width;
+    position: absolute;
+    top: calc(50% - (#{$width} / 2));
+  }
+
+  & span {
+    width: $size + 15px;
+  }
+
+  &:before {
+    transform: rotate(-45deg);
+  }
+  &:after {
+    transform: rotate(45deg);
+  }
+
+  & span {
+    transform: rotate(1deg);
+  }
+
+  & span,
+  &:before,
+  &:after {
+    right: 0;
+    transform-origin: right 50%;
+  }
+
+  &:before,
+  &:after {
+    transition: right 0.3s 0.05s;
+  }
+
+  & span {
+    transition: width 0.3s, right 0.3s 0.05s;
+  }
+  transition: 01.2s;
+}
+
+.services-item:hover {
+  .arrow-right {
+    transform: rotate(0deg);
+    animation: animationOn 01.2s;
+    & span,
+    &:before,
+    &:after {
+      background: #fff;
+    }
+    & span {
+      width: 45px + 12px;
+      animation: animationSpan 01.2s;
+    }
+  }
+}
+
+.services-item:active {
+  .arrow-right span {
+    width: 70px;
+  }
+}
+
+@keyframes animationOn {
+  0% {
+    transform: rotate(-45deg);
+  }
+  33% {
+    transform: rotate(-45deg);
+  }
+  // 50% {
+  //   transform: rotate(0deg);
+  // }
+  66% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes animationSpan {
+  0% {
+    width: 45px;
+  }
+  33% {
+    width: 45px;
+  }
+  // 50% {
+  //   width: 45px;
+  // }
+  66% {
+    width: 45px;
+  }
+  100% {
+    width: 45px + 12px;
+  }
+}
+
+@media (min-width: 768px) {
+  .arrow-right {
+    display: flex;
+    width: 42px;
+  }
+}

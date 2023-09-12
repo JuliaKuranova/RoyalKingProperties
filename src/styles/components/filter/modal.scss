@@ -1,0 +1,20 @@
+.ReactModal__Overlay {
+    // background: rgba(0, 0, 0, 0.7) !important;
+    background: #181818 !important;
+    z-index: 2;
+}
+
+.ReactModal__Content {
+    inset: auto !important;
+    background: #181818 !important;
+    padding: inherit !important;
+    margin-top: 58px;
+    border: none !important;
+    
+    width: 100%;
+    // display: none;
+}
+
+.arrow-modal {
+    display: none;
+}

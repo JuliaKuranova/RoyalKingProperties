@@ -1,0 +1,284 @@
+.offer-items .slick-slider {
+  $size: 48px;
+  $size-arrow: 16px;
+  $width: 2px;
+
+  .slick-arrow {
+    top: 30% !important;
+    z-index: 1;
+    position: absolute;
+    cursor: pointer;
+    background: #f5deb2 !important;
+    border-radius: 50px;
+    width: $size !important;
+    height: $size !important;
+
+    & span,
+    &:before,
+    &:after {
+      background: black;
+      content: "";
+      display: block;
+      height: $width;
+      position: absolute;
+      top: calc(50% - (#{$width} / 2));
+    }
+
+    &:before {
+      transform: rotate(-45deg);
+      width: $size-arrow;
+    }
+    &:after {
+      transform: rotate(45deg);
+      width: $size-arrow + 2px;
+    }
+
+    & span {
+      width: 0;
+    }
+    &:hover span {
+      width: 23px;
+    }
+  }
+
+  $padding_arrow: 15px;
+
+  .slick-prev {
+    left: -50px;
+
+    & span,
+    &:before,
+    &:after {
+      left: $padding_arrow;
+      transform-origin: left 50%;
+    }
+
+    &:before,
+    &:after {
+      transition: left 0.3s 0.05s;
+    }
+
+    & span {
+      transition: width 0.3s, left 0.3s 0.05s;
+    }
+
+    &:hover {
+      & span,
+      &:before,
+      &:after {
+        left: 9px;
+      }
+    }
+  }
+
+  .slick-next {
+    right: -50px;
+
+    & span,
+    &:before,
+    &:after {
+      right: $padding_arrow;
+      transform-origin: right 100%;
+    }
+
+    &:before,
+    &:after {
+      transition: right 0.3s 0.05s;
+    }
+
+    & span {
+      transition: width 0.3s, right 0.3s 0.05s;
+      top: 47%;
+    }
+
+    &:hover {
+      & span,
+      &:before,
+      &:after {
+        right: 12px;
+      }
+    }
+  }
+
+  .slick-dots {
+    display: none !important;
+  }
+}
+
+.home-properties .offer-items .slick-slider .slick-arrow:after {
+  top: calc(50% - (2.5px / 3)) !important;
+}
+
+.apartment-page
+  .section
+  .home-properties
+  .offer-items
+  .slick-slider
+  .slick-arrow {
+  top: 50% !important;
+}
+
+// popup
+.popup-content .slick-slider .slick-arrow::before {
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 8px;
+}
+
+.popup-content .slick-slider .slick-arrow {
+  display: none !important;
+}
+
+@media (min-width: 1200px) {
+  $padding: 5%;
+  .apartments__banner .slick-slider {
+    .slick-arrow {
+      z-index: 10;
+      :hover {
+        opacity: 1;
+      }
+    }
+
+    .slick-prev {
+      padding: 15% 25%;
+      &::before {
+        content: url(../../../../assets/img/icon/icon-slide-banner-left.svg);
+        position: absolute;
+        left: $padding;
+      }
+    }
+
+    .slick-next {
+      padding: 15% 25%;
+      &::before {
+        content: url(../../../../assets/img/icon/icon-slide-banner-right.svg);
+        position: absolute;
+        right: $padding;
+      }
+    }
+
+    .popup-content .slick-slider .slick-arrow {
+      display: flex !important;
+    }
+
+    .popup-content .slick-slider .slick-arrow:hover {
+      opacity: 1;
+    }
+
+    .popup-content .slick-slider .slick-prev {
+      z-index: 1;
+      padding: 20% 50% 20% 0;
+    }
+
+    .popup-content .slick-slider .slick-prev::before {
+      content: url(../../../../assets/img/icon/icon-slide-banner-left.svg);
+      margin-left: -42px;
+    }
+
+    .popup-content .slick-slider .slick-next {
+      padding: 20% 0px 20% 50%;
+    }
+
+    .popup-content .slick-slider .slick-next::before {
+      content: url(../../../../assets/img/icon/icon-slide-banner-right.svg);
+    }
+  }
+}
+
+/***************
+ * Arrow NEW
+ ***************/
+$size: 48px;
+$width: 2px;
+$size-arrow: 16px;
+
+.slick-arrow {
+  cursor: pointer;
+  display: block;
+  width: $size;
+  height: $size;
+  position: relative;
+  background: #f5deb2;
+  border-radius: 50px;
+
+  & span,
+  &:before,
+  &:after {
+    background: black;
+    content: "";
+    display: block;
+    width: $size-arrow;
+    height: $width;
+    position: absolute;
+    top: calc(50% - (#{$width} / 2));
+  }
+
+  &:before {
+    transform: rotate(-45deg);
+  }
+  &:after {
+    transform: rotate(45deg);
+  }
+
+  & span {
+    width: 0;
+  }
+
+  &:hover span {
+    width: $size-arrow + 8px;
+  }
+}
+
+$hover-span: 10px;
+
+.slick-prev {
+  & span,
+  &:before,
+  &:after {
+    left: $size-arrow;
+    transform-origin: left 50%;
+  }
+
+  &:before,
+  &:after {
+    transition: left 0.3s 0.05s;
+  }
+
+  & span {
+    transition: width 0.3s, left 0.3s 0.05s;
+  }
+
+  &:hover {
+    & span,
+    &:before,
+    &:after {
+      left: $hover-span;
+    }
+  }
+}
+
+.slick-next {
+  & span,
+  &:before,
+  &:after {
+    right: $size-arrow;
+    transform-origin: right 50%;
+  }
+
+  &:before,
+  &:after {
+    transition: right 0.3s 0.05s;
+  }
+
+  & span {
+    transition: width 0.3s, right 0.3s 0.05s;
+  }
+
+  &:hover {
+    & span,
+    &:before,
+    &:after {
+      right: $hover-span;
+    }
+  }
+}

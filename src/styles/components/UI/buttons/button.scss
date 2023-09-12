@@ -9,24 +9,29 @@
 // }
 .more-btn {
   border: 2px solid var.$white;
-  padding: 16px 29px;
-  font-family: Neutral Face, sans-serif;
+  padding: 14px 29px;
+  font-family: "Neutral Face", sans-serif;
+  // font-family: 'Jost Regular', sans-serif;
   font-size: 24px;
   font-weight: 400;
   background: none;
   color: white;
   width: -webkit-fill-available;
   transition: var.$transition-time;
-
+  cursor: pointer;
   display: flex;
+  column-gap: 24px;
   // column-gap: 8px;
   align-items: center;
   justify-content: center;
 
-  & span {
-    padding-right: 24px;
-    line-height: 0.8;
-  }
+  // & span {
+  // padding-right: 24px;
+  // line-height: 1;
+  // height: 24px;
+  // margin: 4px 0;
+  // padding-top: 4px;
+  // }
 
   svg {
     transition: var.$transition-time;
@@ -42,6 +47,78 @@
         fill: black;
       }
     }
+  }
+}
+
+.my-button {
+  background: rgb(245, 222, 178);
+  height: 25px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 18px;
+  line-height: 18.68px;
+  padding: 20.5px 16px;
+  font-family: "Neutral Face";
+  color: black;
+  cursor: pointer;
+
+  position: absolute;
+  top: 50px;
+  left: 45%;
+
+  transition: var.$transition-time;
+
+  &:hover {
+    background: #DAC6A0;
+  }
+}
+
+.ghost-button {
+  border: 1.822px solid #fff;
+  // height: 25px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  font-size: 18px;
+  line-height: 18.68px;
+  padding: 16px 29px;
+  font-family: "Neutral Face";
+  color: white;
+  cursor: pointer;
+
+  transition: var.$transition-time;
+
+  &:hover {
+    // transition: var.$transition-time;
+    background: white;
+    color: black;
+
+    svg {
+      transition: var.$transition-time;
+      transform: rotate(45deg);
+
+      path {
+        // fill: black;
+        stroke: black;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .ghost-button {
+    width: 210px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .my-button {
+    position: initial;
   }
 }
 
@@ -61,12 +138,22 @@
   color: var.$white;
 }
 
+// .filter
 .btn-yellow {
   background: #f5deb2;
   color: black;
   border: 2px solid #f5deb2;
-
+  column-gap: 8px !important;
   font-size: 18px;
+  padding: 8px 16px !important;
+  border: none !important;
+
+  &:hover {
+    background: #e4cfa6;
+    svg {
+      rotate: none;
+    }
+  }
 }
 
 .btn-black {

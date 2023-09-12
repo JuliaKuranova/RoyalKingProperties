@@ -4,6 +4,7 @@
 // props.icon = 'glass'
 // props.icon = 'x'
 
+
 export default function MoreButton(props) {
   let colorClass = `btn-${props.color}`;
   let icon = null;
@@ -12,8 +13,8 @@ export default function MoreButton(props) {
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="24"
-        height="25"
-        viewBox="0 0 24 25"
+        height="24"
+        viewBox="0 0 24 24"
         fill="none"
       >
         <path
@@ -56,10 +57,7 @@ export default function MoreButton(props) {
   return (
     <button onClick={props.onClick} className={`more-btn ${colorClass}`}>
       {icon}
-      <span>{props.children}</span>
-      {/* <svg xmlns="http://www.w3.org/2000/svg" className='arrow-svg' width="26" height="26" viewBox="0 0 26 26" fill="none">
-        <path d="M1.61414 24.7349L24.6654 1.68359M24.6654 1.68359H3.43397M24.6654 1.68359V22.915" stroke="white" stroke-width="2"/>
-      </svg> */}
+      {props.children ? <div>{props.children}</div> : null}
     </button>
   );
 }

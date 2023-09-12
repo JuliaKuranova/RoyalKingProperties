@@ -52,4 +52,20 @@
     max-height: 584px;
     object-fit: cover;
   }
+
+  h1 {
+    position: absolute;
+    max-width: 1440px;
+    width: 100%;
+    bottom: 10%;
+    left: 50%;
+    margin: 0 16px;
+    transform: translate(-50%, -40%);
+  }
+}
+
+@media (min-width: 768px) {
+  .header-image h1 {
+    margin: 0 82px;
+  }
 }

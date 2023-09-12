@@ -1,17 +1,7 @@
 import { useRef, useState } from "react";
-//theme
-import "primereact/resources/themes/lara-light-indigo/theme.css";
 
-//core
-import "primereact/resources/primereact.min.css";
-// import Dropdown from 'react-dropdown';
-// import 'react-dropdown/style.css';
-import { Dropdown } from "primereact/dropdown";
-import { MultiSelect } from "primereact/multiselect";
-import DropdownInput from "../UI/inputs/DropdownInput";
-
-import MoreButton from "../../components/UI/buttons/MoreButton";
-import { useEffect } from "react";
+import DesktopFilter from "./DesktopFilter";
+import MobileFilter from "./MobileFilter";
 
 const items = [
   {
@@ -47,8 +37,8 @@ const items = [
 ];
 
 export default function Filter(props) {
-  console.log('test props from filter', props);
-  const ref1 = useRef();
+  console.log("test props from filter", props);
+
   function filterItems() {
     const keys = ["type", "rooms"];
     const keysRanges = ["price", "square"];
@@ -68,43 +58,12 @@ export default function Filter(props) {
   }
 
   const [filterOptions, setFilterOptions] = useState({
-    type: [],
-    rooms: [],
+    type: ['Apartments'],
+    rooms: [2, 4],
     stage: [],
+    price: [0, 0],
+    area: [0, 0]
   });
-
-  useEffect(() => {
-    // console.log(filterOptions)
-    const elems = ref1.current.querySelectorAll(".p-multiselect-label");
-    // elems.forEach(el => {
-    //   console.log(el)
-    //   el.innerText = 'hello'
-    // })
-    if (filterOptions.type.length === 3) {
-      elems[0].innerText = "Any types";
-    }
-
-    if (filterOptions.rooms.length) {
-      let rooms = filterOptions.rooms
-        .filter((e) => e !== "Studio")
-        .sort((a, b) => a - b);
-      const isStudio = filterOptions.rooms.includes("Studio");
-      let text = rooms.join(", ");
-      if (text) {
-        text += " Bedrooms";
-      }
-      if (isStudio && text) {
-        text = "Studio, " + text;
-      } else if (isStudio) {
-        text = "Studio";
-      }
-      elems[1].innerText = text;
-    }
-
-    if (filterOptions.stage.length === 2) {
-      elems[2].innerText = "Any stage";
-    }
-  }, [filterOptions]);
 
   const apartmentTypes = [
     { label: "Apartments", value: "Apartments" },
@@ -125,57 +84,22 @@ export default function Filter(props) {
   ];
 
   return (
-    <div className="filter" ref={ref1}>
-      <MultiSelect
-        value={filterOptions.type}
-        onChange={(event) => {
-          setFilterOptions({ ...filterOptions, type: event.value });
-          console.log(event.value);
-        }}
-        options={apartmentTypes}
-        placeholder="Any types"
-        className="w-full md:w-20rem"
+    <>
+      <DesktopFilter 
+        filterOptions={filterOptions}
+        setFilterOptions={setFilterOptions}
+        apartmentTypes={apartmentTypes}
+        bedrooms={bedrooms}
+        stage={stage}
       />
 
-      <MultiSelect
-        value={filterOptions.rooms}
-        onChange={(event) => {
-          setFilterOptions({ ...filterOptions, rooms: event.value });
-          console.log(event.value);
-        }}
-        options={bedrooms}
-        placeholder="All"
-        className="w-full md:w-20rem"
+      <MobileFilter
+        filterOptions={filterOptions}
+        setFilterOptions={setFilterOptions}
+        apartmentTypes={apartmentTypes}
+        bedrooms={bedrooms}
+        stage={stage}
       />
-
-      <DropdownInput
-          text="Any area"
-          placeholder1="From" 
-          placeholder2="To"
-          metric='m²'
-          isOpenA={props.isOpenA}
-          setIsOpenA={props.setIsOpenA}
-      />
-
-      <DropdownInput
-        text="Price range"
-        placeholder1="From"
-        placeholder2="To"
-        metric='AED'
-        isOpenA={props.isOpenA}
-        setIsOpenA={props.setIsOpenA}
-      />
-
-      <MultiSelect
-        value={filterOptions.stage}
-        onChange={(event) => {
-          setFilterOptions({ ...filterOptions, stage: event.value });
-          // console.log(event.value);
-        }}
-        options={stage}
-        placeholder="Any stage"
-        className="w-full md:w-20rem"
-      />
-    </div>
+    </>
   );
 }

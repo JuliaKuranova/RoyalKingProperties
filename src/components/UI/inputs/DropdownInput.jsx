@@ -76,7 +76,7 @@ function DropdownInput(props) {
             // id='name-input'
             // label='Your name'
             placeholder={props.placeholder1}
-            type="number"
+            type="text"
             // value={name}
             // onChange={event => setName(event.target.value)}
             metric={props.metric}
@@ -86,7 +86,7 @@ function DropdownInput(props) {
             // id='name-input'
             // label='Your name'
             placeholder={props.placeholder2}
-            type="number"
+            type="text"
             // value={name}
             // onChange={event => setName(event.target.value)}
             metric={props.metric}

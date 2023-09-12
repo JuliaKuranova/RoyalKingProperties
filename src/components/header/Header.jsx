@@ -27,6 +27,8 @@ export default function Header() {
     }
   };
 
+
+
   // window.onscroll = function (e) {
   //   setNavBg(window.scrollY > 10)
   // }
@@ -81,25 +83,25 @@ export default function Header() {
         style={{ display }}
       >
         <nav>
-          <Link to="/">
+          <Link to="/" className="header__nav__item">
             <MenuItem active={location.pathname === "/"}>
               PROPERTIES
             </MenuItem>
           </Link>
 
-          <Link to="/services">
+          <Link to="/services" className="header__nav__item">
             <MenuItem active={location.pathname === "/services"}>
               SERVICES
             </MenuItem>
           </Link>
 
-          <Link to="/about-us">
+          <Link to="/about-us" className="header__nav__item">
             <MenuItem active={location.pathname === "/about-us"}>
               ABOUT US
             </MenuItem>
           </Link>
 
-          <Link to="/contacts">
+          <Link to="/contacts" className="header__nav__item">
             <MenuItem active={location.pathname === "/contacts"}>
               CONTACTS
             </MenuItem>

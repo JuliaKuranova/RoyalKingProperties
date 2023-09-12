@@ -9,20 +9,31 @@ import CallMe from "../components/UI/buttons/CallMe";
 import Arrow from "../components/UI/svgs/Arrow";
 import Filter from "../components/filter/Filter";
 import MoreButton from "../components/UI/buttons/MoreButton";
+import GhostButton from "../components/UI/buttons/GhostButton";
+
 import { useState } from "react";
+// import { Link } from "react-router-dom";
+import { HashLink as Link } from 'react-router-hash-link';
 
 export default function Home() {
-
   const [isOpenA, setIsOpenA] = useState(false);
   const closeInputs = (event) => {
-    if (event.target.nodeName !== 'INPUT') {
+    if (event.target.nodeName !== "INPUT") {
       setIsOpenA(false);
     }
   };
 
+  // const useParams = ReactRouterDOM.useParams;
+
   return (
     <>
-      <HeaderImage img={headerImage} hasFilter={true} isOpenA={isOpenA} setIsOpenA={setIsOpenA} closeInputs={closeInputs}/>
+      <HeaderImage
+        img={headerImage}
+        hasFilter={true}
+        isOpenA={isOpenA}
+        setIsOpenA={setIsOpenA}
+        closeInputs={closeInputs}
+      />
 
       <main>
         {/* <div className="filter__banner">
@@ -63,7 +74,8 @@ export default function Home() {
                 exclusive listings for discerning buyers and investors.
               </p>
             </div>
-            <CallMe>MORE</CallMe>
+            {/* <CallMe>MORE</CallMe> */}
+            <GhostButton />
             {/* <a href="" className="btn__more">
             <span>more</span>
             <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
@@ -83,51 +95,61 @@ export default function Home() {
           <div className="servises-text">
             <h2 className="h1">services</h2>
             <div className="services-items">
-              <div className="services-item h3">
-                <div className="services__title">
-                  <span>01</span>Residential Property&nbsp;Sales
-                </div>
+              <Link to="/services#Residential-Property-Sales">
+                <div className="services-item h3">
+                  <div className="services__title">
+                    <span>01</span>Residential Property&nbsp;Sales
+                  </div>
 
-                <div class="arrow arrow--right">
-                  <span></span>
-                </div>
-              </div>
-
-              <div className="services-item h3">
-                <div className="services__title">
-                  <span>02</span>Off-plan and&nbsp;investments
-                </div>
-                <div class="arrow arrow--right">
-                  <span></span>
-                </div>
-              </div>
-
-              <div className="services-item h3">
-                <div className="services__title">
-                  <span>03</span>buy property for&nbsp;crypto
-                </div>
-                <div class="arrow arrow--right">
-                  <span></span>
-                </div>
-              </div>
-
-              <div className="services-item h3">
-                <div className="services__title">
-                  <span>04</span>relocation services
-                </div>
-                <div class="arrow arrow--right">
+                  <div class="arrow-right">
                     <span></span>
                   </div>
-              </div>
+                </div>
+              </Link>
 
-              <div className="services-item h3">
-                <div className="services__title">
-                  <span>05</span>buy property&nbsp;online
+              <Link to="/services#Off-Plan-and-Investment-Opportunities">
+                <div className="services-item h3">
+                  <div className="services__title">
+                    <span>02</span>Off-plan and&nbsp;investments
+                  </div>
+                  <div class="arrow-right">
+                    <span></span>
+                  </div>
                 </div>
-                <div class="arrow arrow--right">
-                  <span></span>
+              </Link>
+
+              <Link to="/services#Buy-Property-with-Crypto">
+                <div className="services-item h3">
+                  <div className="services__title">
+                    <span>03</span>buy property for&nbsp;crypto
+                  </div>
+                  <div class="arrow-right">
+                    <span></span>
+                  </div>
                 </div>
-              </div>
+              </Link>
+
+              <Link to="/services#Relocation-Services-in-DubaI">
+                <div className="services-item h3">
+                  <div className="services__title">
+                    <span>04</span>relocation services
+                  </div>
+                  <div class="arrow-right">
+                    <span></span>
+                  </div>
+                </div>
+              </Link>
+
+              <Link to="/services#Buy-Property-Online">
+                <div className="services-item h3">
+                  <div className="services__title">
+                    <span>05</span>buy property&nbsp;online
+                  </div>
+                  <div class="arrow-right">
+                    <span></span>
+                  </div>
+                </div>
+              </Link>
             </div>
           </div>
         </div>

@@ -45,7 +45,7 @@ export default function ApartmentPage() {
               <span>2</span>Baths
             </div>
             <div className="specifications">
-              <span>110.5</span> m2 <span>/ 1223</span> ft2
+              <span>110.5</span> m<sup>2</sup> <span>/ 1223</span> ft<sup>2</sup>
             </div>
           </div>
         </div>

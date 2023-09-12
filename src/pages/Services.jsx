@@ -13,7 +13,7 @@ export default function Services() {
       <div className="services__content section">
         <h1 className='h1'>Services</h1>
         <div className="services__items">
-          <div className="services__box">
+          <div className="services__box" id='Residential-Property-Sales'>
             <div className="services__item">
               <div className="h3">
                 <span>01</span>Residential Property Sales
@@ -24,7 +24,8 @@ export default function Services() {
             </div>
             <img src={photoWomen} alt="photo Women" />
           </div>
-          <div className="services__box">
+
+          <div className="services__box" id='Off-Plan-and-Investment-Opportunities'>
             <div className="services__item">
               <div className="h3">
                 <span>02</span>Off-Plan and Investment Opportunities
@@ -35,7 +36,8 @@ export default function Services() {
             </div>
             <img src={photo2} alt="" />
           </div>
-          <div className="services__box">
+
+          <div className="services__box" id='Buy-Property-with-Crypto'>
             <div className="services__item">
               <div className="h3">
                 <span>03</span>Buy Property with Crypto
@@ -46,7 +48,8 @@ export default function Services() {
             </div>
             <img src={photo3} alt="" />
           </div>
-          <div className="services__box">
+
+          <div className="services__box" id='Relocation-Services-in-DubaI'>
             <div className="services__item">
               <div className="h3">
                 <span>04</span>Relocation Services in DubaI
@@ -57,7 +60,8 @@ export default function Services() {
             </div>
             <img src={photo} alt="" />
           </div>
-          <div className="services__box">
+
+          <div className="services__box" id='Buy-Property-Online'>
             <div className="services__item">
               <div className="h3">
                 <span>05</span>Buy Property Online

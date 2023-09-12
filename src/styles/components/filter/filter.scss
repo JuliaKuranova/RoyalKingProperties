@@ -1,3 +1,23 @@
+// .p-multiselect-items-wrapper:active {
+//   .p-multiselect-trigger svg {
+//     transform: rotate(-180deg);
+//   }
+// }
+
+.filter .more-btn  {
+  position: absolute;
+  top: 50px;
+  left: 40%;
+}
+
+@media (min-width: 1200px) {
+  .filter .more-btn {
+    position: initial;
+  }
+}
+
+
+
 .dropdown-head span:first-child,
 .p-multiselect-label,
 .p-multiselect-item {
@@ -38,17 +58,37 @@
 }
 
 .filter {
-  display: flex;
+  display: none;
   column-gap: 4px;
+
+  .h2 {
+    position: absolute;
+    top: -60px;
+  }
+
+  .more-btn {
+    margin-left: 12px;
+  }
+}
+
+.filter__project {
+  // display: flex;
+
+  .mobile-filter__wrapper .mobile-filter__intro {
+    position: inherit;
+    transform: inherit;
+    .h2 {
+      display: none;
+    }
+  }
+
+  .h2 {
+    display: none;
+  }
 }
 
 .dropdown-head {
   height: 41px !important;
-}
-
-.btn-yellow {
-  padding: 8px 16px !important;
-  border: none !important;
 }
 
 // выпадашки
@@ -95,13 +135,22 @@
 }
 
 .p-multiselect-panel .p-multiselect-items .p-multiselect-item.p-highlight {
-  background: #f0f0f0 !important;
+  // background: #f0f0f0 !important;
+  background: none !important;
 }
 
 .p-checkbox .p-checkbox-box.p-highlight {
-  border-color: #f0f0f0 !important;
-  background: #f0f0f0 !important;
+  // border-color: #f0f0f0 !important;
+  // background: #f0f0f0 !important;
+  background: none !important;
+
 }
 
 @media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
+  .filter {
+    display: flex;
+  }
 }

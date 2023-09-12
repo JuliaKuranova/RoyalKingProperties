@@ -1,15 +1,12 @@
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-
 import Photo1 from "../../assets/img/popular-photo-1.png";
 import Photo2 from "../../assets/img/KEMPINSKI-RESIDENCES-THE-CREEK.jpg";
 import Photo3 from "../../assets/img/Photo3.png";
-
 import React from "react";
 import Popup from "reactjs-popup";
 import "reactjs-popup/dist/index.css";
-
 import { useRef } from "react";
 import { useEffect } from "react";
 

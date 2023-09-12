@@ -4,13 +4,15 @@ import OfferItem from "../components/UI/images/OfferItem";
 import sliaderImg1 from "../assets/img/sliders/BURJ-BINGHATTI-JACOB-&-CO-RESIDENCES.jpg";
 import MoreButton from "../components/UI/buttons/MoreButton";
 import Filter from "../components/filter/Filter";
+import Cookie from "../components/UI/text/Cookie";
 
 export default function Project() {
   return (
     <>
-      <HeaderImage img={projectBanner} title={'KEMPINSKI RESIDENCES THE CREEK'}/>
+      <HeaderImage img={projectBanner} />
+      
       <main>
-        {/* <div className="project-title">
+        <div className="project-title">
           <div className="main-text">
             <span>Properties</span>
             <svg
@@ -25,7 +27,9 @@ export default function Project() {
             <span>Kempinski residences the Creek</span>
           </div>
           <h1 className="h1 ">KEMPINSKI RESIDENCES THE CREEK</h1>
-        </div> */}
+        </div>
+
+        {/* <Cookie /> */}
 
         <div className="intro main-text">
           There are many variations of passages of Lorem Ipsum available, but
@@ -43,14 +47,14 @@ export default function Project() {
 
         <div className="filter__project">
           <Filter />
-          <div className="filter__project__btn">
-            <MoreButton color="yellow" icon="glass">
+          {/* <div className="filter__project__btn"> */}
+            {/* <MoreButton color="yellow" icon="glass">
               search
-            </MoreButton>
+            </MoreButton> */}
             {/* <MoreButton color="" icon="x">
             Reset filter
           </MoreButton> */}
-          </div>
+          {/* </div> */}
         </div>
         <div className="projects section">
           <OfferItem
