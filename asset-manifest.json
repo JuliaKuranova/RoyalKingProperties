@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/RoyalKingProperties/static/css/main.4f4f929d.css",
-    "main.js": "/RoyalKingProperties/static/js/main.2ce1be8d.js",
+    "main.js": "/RoyalKingProperties/static/js/main.fb4fc8f2.js",
     "static/media/popular-photo-1.png": "/RoyalKingProperties/static/media/popular-photo-1.18e59a039a6fa7950a28.png",
     "static/media/header_image.png": "/RoyalKingProperties/static/media/header_image.b5bf89a7ab0757810fea.png",
     "static/media/Photo3.png": "/RoyalKingProperties/static/media/Photo3.fb3437e018d56ee5a747.png",
@@ -46,10 +46,10 @@
     "static/media/icon-slide-banner-right.svg": "/RoyalKingProperties/static/media/icon-slide-banner-right.9703fb74c368de0b1b99.svg",
     "static/media/Point.svg": "/RoyalKingProperties/static/media/Point.0077123d6bb673f2b933.svg",
     "main.4f4f929d.css.map": "/RoyalKingProperties/static/css/main.4f4f929d.css.map",
-    "main.2ce1be8d.js.map": "/RoyalKingProperties/static/js/main.2ce1be8d.js.map"
+    "main.fb4fc8f2.js.map": "/RoyalKingProperties/static/js/main.fb4fc8f2.js.map"
   },
   "entrypoints": [
     "static/css/main.4f4f929d.css",
-    "static/js/main.2ce1be8d.js"
+    "static/js/main.fb4fc8f2.js"
   ]
 }
